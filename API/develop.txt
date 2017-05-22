@@ -1,0 +1,497 @@
+2017-05-19 22:34:11 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-19 22:34:11 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-19 22:34:11 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-19 22:34:11 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-19 22:34:11 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-19 22:34:11 base.py[line:865] INFO Added job "Init" to job store "default"
+2017-05-19 22:34:11 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
+2017-05-19 22:34:11 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
+2017-05-19 22:34:11 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
+2017-05-19 22:34:11 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
+2017-05-19 22:34:11 base.py[line:158] INFO Scheduler started
+2017-05-19 22:49:58 base.py[line:204] INFO Paused scheduler job processing
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-19 22:49:58 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-05-19 22:49:58 base.py[line:213] INFO Resumed scheduler job processing
+2017-05-19 22:56:27 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495205785679 (61.148.242.246) 3.00ms
+2017-05-19 22:56:33 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/000504.SZ?callback=jsonpcallback&_=1495205791034 (61.148.242.246) 4.00ms
+2017-05-19 22:56:33 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000504.SZ (123.57.150.251) 3.00ms
+2017-05-19 22:56:33 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=000504.SZ (123.57.150.251) 1.00ms
+2017-05-19 22:57:24 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/000504.SZ?callback=jsonpcallback&_=1495205841951 (61.148.242.246) 3.00ms
+2017-05-19 22:57:24 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000504.SZ (123.57.150.251) 3.00ms
+2017-05-19 22:57:24 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=000504.SZ (123.57.150.251) 2.00ms
+2017-05-19 22:57:31 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/600202.SH?callback=jsonpcallback&_=1495205849543 (61.148.242.246) 4.00ms
+2017-05-19 22:57:31 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=600202.SH (123.57.150.251) 3.00ms
+2017-05-19 22:57:31 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=600202.SH (123.57.150.251) 2.00ms
+2017-05-19 22:57:38 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/002261.SZ?callback=jsonpcallback&_=1495205856271 (61.148.242.246) 4.00ms
+2017-05-19 22:57:38 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=002261.SZ (123.57.150.251) 1.00ms
+2017-05-19 22:57:38 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=002261.SZ (123.57.150.251) 3.00ms
+2017-05-19 22:57:46 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/000544.SZ?callback=jsonpcallback&_=1495205864038 (61.148.242.246) 3.00ms
+2017-05-19 22:57:46 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000544.SZ (123.57.150.251) 3.00ms
+2017-05-19 22:57:46 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=000544.SZ (123.57.150.251) 1.00ms
+2017-05-19 22:57:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/300023.SZ?callback=jsonpcallback&_=1495205872219 (61.148.242.246) 3.00ms
+2017-05-19 22:57:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=300023.SZ (123.57.150.251) 5.00ms
+2017-05-19 22:57:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=300023.SZ (123.57.150.251) 1.00ms
+2017-05-19 22:57:59 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495205877348 (61.148.242.246) 2.00ms
+2017-05-19 22:58:03 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495205881391 (61.148.242.246) 2.00ms
+2017-05-19 23:00:00 base.py[line:123] INFO Running job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-05-20 23:00:00 CST)" (scheduled at 2017-05-19 23:00:00+08:00)
+2017-05-19 23:01:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495206105298 (61.148.242.246) 2.00ms
+2017-05-19 23:01:52 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/600703.SH?callback=jsonpcallback&_=1495206109945 (61.148.242.246) 3.00ms
+2017-05-19 23:01:52 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=600703.SH (123.57.150.251) 15.00ms
+2017-05-19 23:01:52 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=600703.SH (123.57.150.251) 5.00ms
+2017-05-19 23:20:19 base.py[line:135] INFO Job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-05-20 23:00:00 CST)" executed successfully
+2017-05-20 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-20 05:00:00 CST)" (scheduled at 2017-05-20 05:00:00+08:00)
+2017-05-20 05:09:09 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-20 22:00:00 CST)" executed successfully
+2017-05-20 06:50:00 base.py[line:123] INFO Running job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-20 06:50:00 CST)" (scheduled at 2017-05-20 06:50:00+08:00)
+2017-05-20 06:50:00 base.py[line:135] INFO Job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-20 06:50:00 CST)" executed successfully
+2017-05-20 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-20 09:31:00 CST)" (scheduled at 2017-05-20 09:31:00+08:00)
+2017-05-20 09:31:00 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-20 09:31:00 CST)" executed successfully
+2017-05-20 15:05:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-20 15:05:00 CST)" (scheduled at 2017-05-20 15:05:00+08:00)
+2017-05-20 15:05:00 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-20 15:05:00 CST)" executed successfully
+2017-05-20 15:16:39 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495264598714 (111.201.117.48) 3.00ms
+2017-05-20 15:17:34 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495264654446 (111.201.117.48) 2.00ms
+2017-05-20 15:17:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22005406503601965218_1495264656663&_=1495264656664 (111.201.117.48) 3.00ms
+2017-05-20 15:17:37 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22005406503601965218_1495264656665&_=1495264656666 (111.201.117.48) 3.00ms
+2017-05-20 15:17:37 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22005406503601965218_1495264656667&_=1495264656668 (111.201.117.48) 2.00ms
+2017-05-20 21:16:22 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495286182532 (27.211.243.35) 3.00ms
+2017-05-20 21:18:58 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495286338743 (27.211.243.35) 1.00ms
+2017-05-20 21:19:01 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22003573908251666559_1495286341339&_=1495286341340 (27.211.243.35) 3.00ms
+2017-05-20 21:19:01 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22003573908251666559_1495286341341&_=1495286341342 (27.211.243.35) 3.00ms
+2017-05-20 21:19:01 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22003573908251666559_1495286341343&_=1495286341344 (27.211.243.35) 3.00ms
+2017-05-20 21:19:29 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22001568331078953551_1495286369120&_=1495286369121 (27.211.243.35) 3.00ms
+2017-05-20 21:19:29 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22001568331078953551_1495286369122&_=1495286369123 (27.211.243.35) 2.00ms
+2017-05-20 21:19:29 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22001568331078953551_1495286369124&_=1495286369125 (27.211.243.35) 2.00ms
+2017-05-20 21:20:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/002136.SZ?callback=jsonpcallback&_=1495286406849 (27.211.243.35) 5.00ms
+2017-05-20 21:20:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=002136.SZ (123.57.150.251) 1.00ms
+2017-05-20 21:20:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=002136.SZ (123.57.150.251) 4.00ms
+2017-05-20 21:21:20 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/000999.SZ?callback=jsonpcallback&_=1495286480206 (27.211.243.35) 4.00ms
+2017-05-20 21:21:20 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000999.SZ (123.57.150.251) 3.00ms
+2017-05-20 21:21:20 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=000999.SZ (123.57.150.251) 2.00ms
+2017-05-20 21:30:00 base.py[line:123] INFO Running job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-20 21:30:00 CST)" (scheduled at 2017-05-20 21:30:00+08:00)
+2017-05-20 21:30:00 base.py[line:135] INFO Job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-20 21:30:00 CST)" executed successfully
+2017-05-20 22:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-20 22:00:00 CST)" (scheduled at 2017-05-20 22:00:00+08:00)
+2017-05-20 22:09:20 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-21 05:00:00 CST)" executed successfully
+2017-05-20 23:00:00 base.py[line:123] INFO Running job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-05-20 23:00:00 CST)" (scheduled at 2017-05-20 23:00:00+08:00)
+2017-05-20 23:00:00 base.py[line:135] INFO Job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-05-20 23:00:00 CST)" executed successfully
+2017-05-21 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-21 05:00:00 CST)" (scheduled at 2017-05-21 05:00:00+08:00)
+2017-05-21 05:09:21 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-21 22:00:00 CST)" executed successfully
+2017-05-21 06:50:00 base.py[line:123] INFO Running job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-21 06:50:00 CST)" (scheduled at 2017-05-21 06:50:00+08:00)
+2017-05-21 06:50:00 base.py[line:135] INFO Job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-21 06:50:00 CST)" executed successfully
+2017-05-21 08:16:15 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495325775255 (114.242.250.129) 2.00ms
+2017-05-21 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-21 09:31:00 CST)" (scheduled at 2017-05-21 09:31:00+08:00)
+2017-05-21 09:31:00 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-21 09:31:00 CST)" executed successfully
+2017-05-21 15:05:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-22 15:05:00 CST)" (scheduled at 2017-05-21 15:05:00+08:00)
+2017-05-21 15:05:00 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-22 15:05:00 CST)" executed successfully
+2017-05-21 21:30:00 base.py[line:123] INFO Running job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-22 21:30:00 CST)" (scheduled at 2017-05-21 21:30:00+08:00)
+2017-05-21 21:30:00 base.py[line:135] INFO Job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-22 21:30:00 CST)" executed successfully
+2017-05-21 22:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-22 05:00:00 CST)" (scheduled at 2017-05-21 22:00:00+08:00)
+2017-05-21 22:09:14 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-22 05:00:00 CST)" executed successfully
+2017-05-21 22:40:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495377607359 (14.204.144.106) 2.00ms
+2017-05-21 23:00:00 base.py[line:123] INFO Running job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-05-22 23:00:00 CST)" (scheduled at 2017-05-21 23:00:00+08:00)
+2017-05-21 23:00:00 base.py[line:135] INFO Job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-05-22 23:00:00 CST)" executed successfully
+2017-05-21 23:00:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495378854811 (14.204.144.105) 2.00ms
+2017-05-21 23:17:44 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=5&type=fund (23.163.0.158) 3.00ms
+2017-05-21 23:17:45 wsgi.py[line:355] WARNING 404 GET /favicon.ico (23.163.0.158) 16.00ms
+2017-05-21 23:17:50 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=5&type=fund (23.163.0.158) 2.00ms
+2017-05-22 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-22 22:00:00 CST)" (scheduled at 2017-05-22 05:00:00+08:00)
+2017-05-22 05:09:13 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-22 22:00:00 CST)" executed successfully
+2017-05-22 06:50:00 base.py[line:123] INFO Running job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-23 06:50:00 CST)" (scheduled at 2017-05-22 06:50:00+08:00)
+2017-05-22 06:50:00 base.py[line:204] INFO Paused scheduler job processing
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 06:50:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-05-22 06:50:00 base.py[line:213] INFO Resumed scheduler job processing
+2017-05-22 06:50:00 base.py[line:135] INFO Job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-23 06:50:00 CST)" executed successfully
+2017-05-22 08:15:00 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 08:15:00 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 08:15:00 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 08:15:00 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 08:15:00 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 08:15:00 base.py[line:865] INFO Added job "Init" to job store "default"
+2017-05-22 08:15:00 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
+2017-05-22 08:15:00 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
+2017-05-22 08:15:00 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
+2017-05-22 08:15:00 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
+2017-05-22 08:15:00 base.py[line:158] INFO Scheduler started
+2017-05-22 08:23:01 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 2.00ms
+2017-05-22 08:23:01 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 1.00ms
+2017-05-22 08:23:02 base.py[line:204] INFO Paused scheduler job processing
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 08:23:02 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-05-22 08:23:02 base.py[line:213] INFO Resumed scheduler job processing
+2017-05-22 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-23 09:31:00 CST)" (scheduled at 2017-05-22 09:31:00+08:00)
+2017-05-22 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-23 09:31:00 CST)" (scheduled at 2017-05-22 09:31:00+08:00)
+2017-05-22 09:32:30 base.py[line:619] INFO Removed job 101
+2017-05-22 09:32:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 09:32:30 CST)" (scheduled at 2017-05-22 09:32:30+08:00)
+2017-05-22 09:32:30 base.py[line:619] INFO Removed job 101
+2017-05-22 09:32:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 09:32:30 CST)" (scheduled at 2017-05-22 09:32:30+08:00)
+2017-05-22 09:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:40:20 CST)" (scheduled at 2017-05-22 09:35:20+08:00)
+2017-05-22 09:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:40:20 CST)" (scheduled at 2017-05-22 09:35:20+08:00)
+2017-05-22 09:35:20 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 09:32:30 CST)" executed successfully
+2017-05-22 09:35:21 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 09:32:30 CST)" executed successfully
+2017-05-22 09:37:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:40:20 CST)" executed successfully
+2017-05-22 09:37:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:40:20 CST)" executed successfully
+2017-05-22 09:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:40:20 CST)" (scheduled at 2017-05-22 09:40:20+08:00)
+2017-05-22 09:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:40:20 CST)" (scheduled at 2017-05-22 09:40:20+08:00)
+2017-05-22 09:42:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:45:20 CST)" executed successfully
+2017-05-22 09:42:01 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:45:20 CST)" executed successfully
+2017-05-22 09:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:50:20 CST)" (scheduled at 2017-05-22 09:45:20+08:00)
+2017-05-22 09:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:45:20 CST)" (scheduled at 2017-05-22 09:45:20+08:00)
+2017-05-22 09:47:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:50:20 CST)" executed successfully
+2017-05-22 09:47:01 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:50:20 CST)" executed successfully
+2017-05-22 09:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:55:20 CST)" (scheduled at 2017-05-22 09:50:20+08:00)
+2017-05-22 09:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:50:20 CST)" (scheduled at 2017-05-22 09:50:20+08:00)
+2017-05-22 09:52:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:55:20 CST)" executed successfully
+2017-05-22 09:52:01 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:55:20 CST)" executed successfully
+2017-05-22 09:55:10 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495418110862 (14.204.144.104) 3.00ms
+2017-05-22 09:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:00:20 CST)" (scheduled at 2017-05-22 09:55:20+08:00)
+2017-05-22 09:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 09:55:20 CST)" (scheduled at 2017-05-22 09:55:20+08:00)
+2017-05-22 09:56:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=600242.SH (123.57.150.251) 3.00ms
+2017-05-22 09:56:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=600242.SH (123.57.150.251) 2.00ms
+2017-05-22 09:56:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/600242.SH?callback=jsonpcallback&_=1495418164566 (14.204.144.104) 3.00ms
+2017-05-22 09:57:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:00:20 CST)" executed successfully
+2017-05-22 09:57:01 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:00:20 CST)" executed successfully
+2017-05-22 10:00:10 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-23 09:31:00 CST)" executed successfully
+2017-05-22 10:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:05:20 CST)" (scheduled at 2017-05-22 10:00:20+08:00)
+2017-05-22 10:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 10:30:20 CST)" (scheduled at 2017-05-22 10:00:20+08:00)
+2017-05-22 10:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:00:20 CST)" (scheduled at 2017-05-22 10:00:20+08:00)
+2017-05-22 10:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 10:00:20 CST)" (scheduled at 2017-05-22 10:00:20+08:00)
+2017-05-22 10:01:59 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:05:20 CST)" executed successfully
+2017-05-22 10:02:10 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 10:30:20 CST)" executed successfully
+2017-05-22 10:02:51 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:05:20 CST)" executed successfully
+2017-05-22 10:03:01 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 10:30:20 CST)" executed successfully
+2017-05-22 10:03:53 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-23 09:31:00 CST)" executed successfully
+2017-05-22 10:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:10:20 CST)" (scheduled at 2017-05-22 10:05:20+08:00)
+2017-05-22 10:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:05:20 CST)" (scheduled at 2017-05-22 10:05:20+08:00)
+2017-05-22 10:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:10:20 CST)" executed successfully
+2017-05-22 10:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:10:20 CST)" executed successfully
+2017-05-22 10:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:15:20 CST)" (scheduled at 2017-05-22 10:10:20+08:00)
+2017-05-22 10:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:15:20 CST)" (scheduled at 2017-05-22 10:10:20+08:00)
+2017-05-22 10:11:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:15:20 CST)" executed successfully
+2017-05-22 10:11:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:15:20 CST)" executed successfully
+2017-05-22 10:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:20:20 CST)" (scheduled at 2017-05-22 10:15:20+08:00)
+2017-05-22 10:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:20:20 CST)" (scheduled at 2017-05-22 10:15:20+08:00)
+2017-05-22 10:15:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495419354386 (14.204.144.104) 2.00ms
+2017-05-22 10:16:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:20:20 CST)" executed successfully
+2017-05-22 10:16:12 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:20:20 CST)" executed successfully
+2017-05-22 10:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:20:20 CST)" (scheduled at 2017-05-22 10:20:20+08:00)
+2017-05-22 10:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:25:20 CST)" (scheduled at 2017-05-22 10:20:20+08:00)
+2017-05-22 10:21:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:25:20 CST)" executed successfully
+2017-05-22 10:21:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:25:20 CST)" executed successfully
+2017-05-22 10:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:30:20 CST)" (scheduled at 2017-05-22 10:25:20+08:00)
+2017-05-22 10:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:30:20 CST)" (scheduled at 2017-05-22 10:25:20+08:00)
+2017-05-22 10:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:30:20 CST)" executed successfully
+2017-05-22 10:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:30:20 CST)" executed successfully
+2017-05-22 10:26:48 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495419997798 (61.135.194.211) 2.00ms
+2017-05-22 10:26:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495420003666 (61.135.194.211) 2.00ms
+2017-05-22 10:27:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/002558.SZ?callback=jsonpcallback&_=1495420016500 (61.135.194.211) 6.00ms
+2017-05-22 10:27:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=002558.SZ (123.57.150.251) 2.00ms
+2017-05-22 10:27:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=002558.SZ (123.57.150.251) 55.00ms
+2017-05-22 10:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:35:20 CST)" (scheduled at 2017-05-22 10:30:20+08:00)
+2017-05-22 10:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:00:20 CST)" (scheduled at 2017-05-22 10:30:20+08:00)
+2017-05-22 10:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 10:30:20+08:00)
+2017-05-22 10:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:35:20 CST)" (scheduled at 2017-05-22 10:30:20+08:00)
+2017-05-22 10:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:00:20 CST)" (scheduled at 2017-05-22 10:30:20+08:00)
+2017-05-22 10:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 10:30:20+08:00)
+2017-05-22 10:31:16 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495420265814 (61.135.194.211) 3.00ms
+2017-05-22 10:31:18 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495420268508 (61.135.194.211) 2.00ms
+2017-05-22 10:32:49 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:35:20 CST)" executed successfully
+2017-05-22 10:32:50 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:35:20 CST)" executed successfully
+2017-05-22 10:33:35 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 10:33:36 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 10:33:36 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:00:20 CST)" executed successfully
+2017-05-22 10:33:36 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:00:20 CST)" executed successfully
+2017-05-22 10:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:35:20 CST)" (scheduled at 2017-05-22 10:35:20+08:00)
+2017-05-22 10:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:35:20 CST)" (scheduled at 2017-05-22 10:35:20+08:00)
+2017-05-22 10:36:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:40:20 CST)" executed successfully
+2017-05-22 10:36:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:40:20 CST)" executed successfully
+2017-05-22 10:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:45:20 CST)" (scheduled at 2017-05-22 10:40:20+08:00)
+2017-05-22 10:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:40:20 CST)" (scheduled at 2017-05-22 10:40:20+08:00)
+2017-05-22 10:41:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:45:20 CST)" executed successfully
+2017-05-22 10:41:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:45:20 CST)" executed successfully
+2017-05-22 10:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:50:20 CST)" (scheduled at 2017-05-22 10:45:20+08:00)
+2017-05-22 10:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:50:20 CST)" (scheduled at 2017-05-22 10:45:20+08:00)
+2017-05-22 10:45:53 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421154352 (111.193.164.174) 122.00ms
+2017-05-22 10:46:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421165547 (111.193.164.174) 2.00ms
+2017-05-22 10:46:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:50:20 CST)" executed successfully
+2017-05-22 10:46:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:50:20 CST)" executed successfully
+2017-05-22 10:46:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421208903 (111.193.164.174) 2.00ms
+2017-05-22 10:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:55:20 CST)" (scheduled at 2017-05-22 10:50:20+08:00)
+2017-05-22 10:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:55:20 CST)" (scheduled at 2017-05-22 10:50:20+08:00)
+2017-05-22 10:51:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:55:20 CST)" executed successfully
+2017-05-22 10:51:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 10:55:20 CST)" executed successfully
+2017-05-22 10:52:24 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421544444 (117.175.167.160) 2.00ms
+2017-05-22 10:52:29 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22008662203555514894_1495421549639&_=1495421549640 (117.175.167.160) 4.00ms
+2017-05-22 10:52:29 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22008662203555514894_1495421549643&_=1495421549644 (14.204.144.104) 3.00ms
+2017-05-22 10:52:29 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22008662203555514894_1495421549641&_=1495421549642 (14.204.144.104) 3.00ms
+2017-05-22 10:54:59 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421686968 (119.163.127.69) 3.00ms
+2017-05-22 10:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:00:20 CST)" (scheduled at 2017-05-22 10:55:20+08:00)
+2017-05-22 10:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:00:20 CST)" (scheduled at 2017-05-22 10:55:20+08:00)
+2017-05-22 10:55:55 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421756163 (14.204.144.104) 1.00ms
+2017-05-22 10:56:08 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421768848 (14.204.144.104) 3.00ms
+2017-05-22 10:56:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:00:20 CST)" executed successfully
+2017-05-22 10:56:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:00:20 CST)" executed successfully
+2017-05-22 10:57:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495421856625 (111.193.164.174) 2.00ms
+2017-05-22 11:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:05:20 CST)" (scheduled at 2017-05-22 11:00:20+08:00)
+2017-05-22 11:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:00:20+08:00)
+2017-05-22 11:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:05:20 CST)" (scheduled at 2017-05-22 11:00:20+08:00)
+2017-05-22 11:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:00:20+08:00)
+2017-05-22 11:01:56 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:05:20 CST)" executed successfully
+2017-05-22 11:02:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:05:20 CST)" executed successfully
+2017-05-22 11:02:10 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:02:10 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:10:20 CST)" (scheduled at 2017-05-22 11:05:20+08:00)
+2017-05-22 11:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:10:20 CST)" (scheduled at 2017-05-22 11:05:20+08:00)
+2017-05-22 11:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:10:20 CST)" executed successfully
+2017-05-22 11:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:10:20 CST)" executed successfully
+2017-05-22 11:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:15:20 CST)" (scheduled at 2017-05-22 11:10:20+08:00)
+2017-05-22 11:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:15:20 CST)" (scheduled at 2017-05-22 11:10:20+08:00)
+2017-05-22 11:11:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:15:20 CST)" executed successfully
+2017-05-22 11:11:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:15:20 CST)" executed successfully
+2017-05-22 11:12:16 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000001.SH (61.135.194.211) 3.00ms
+2017-05-22 11:12:16 wsgi.py[line:355] WARNING 404 GET /favicon.ico (61.135.194.211) 2.00ms
+2017-05-22 11:12:25 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=600123.SH (61.135.194.211) 4.00ms
+2017-05-22 11:12:26 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000001.SH (180.153.206.20) 2.00ms
+2017-05-22 11:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:20:20 CST)" (scheduled at 2017-05-22 11:15:20+08:00)
+2017-05-22 11:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:20:20 CST)" (scheduled at 2017-05-22 11:15:20+08:00)
+2017-05-22 11:16:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:20:20 CST)" executed successfully
+2017-05-22 11:16:12 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:20:20 CST)" executed successfully
+2017-05-22 11:19:30 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495423172057 (111.193.164.174) 78.00ms
+2017-05-22 11:19:30 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495423172781 (111.193.164.174) 2.00ms
+2017-05-22 11:19:38 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495423180298 (111.193.164.174) 2.00ms
+2017-05-22 11:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:25:20 CST)" (scheduled at 2017-05-22 11:20:20+08:00)
+2017-05-22 11:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:25:20 CST)" (scheduled at 2017-05-22 11:20:20+08:00)
+2017-05-22 11:21:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:25:20 CST)" executed successfully
+2017-05-22 11:21:12 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:25:20 CST)" executed successfully
+2017-05-22 11:22:25 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=600123.SH (61.151.226.16) 4.00ms
+2017-05-22 11:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:25:20+08:00)
+2017-05-22 11:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:25:20+08:00)
+2017-05-22 11:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:27:03 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495423624826 (111.193.164.174) 2.00ms
+2017-05-22 11:30:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495423807016 (111.193.164.174) 2.00ms
+2017-05-22 11:30:20 base.py[line:619] INFO Removed job 105
+2017-05-22 11:30:20 base.py[line:619] INFO Removed job 130
+2017-05-22 11:30:20 base.py[line:619] INFO Removed job 160
+2017-05-22 11:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:30:20+08:00)
+2017-05-22 11:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:30:20+08:00)
+2017-05-22 11:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:30:20+08:00)
+2017-05-22 11:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:30:20+08:00)
+2017-05-22 11:30:20 base.py[line:619] INFO Removed job 105
+2017-05-22 11:30:20 base.py[line:619] INFO Removed job 130
+2017-05-22 11:30:20 base.py[line:619] INFO Removed job 160
+2017-05-22 11:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:30:20+08:00)
+2017-05-22 11:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" (scheduled at 2017-05-22 11:30:20+08:00)
+2017-05-22 11:32:49 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:32:50 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:33:39 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:33:39 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:33:39 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:33:40 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 11:30:20 CST)" executed successfully
+2017-05-22 11:34:51 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 11:34:51 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 11:34:51 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 11:34:51 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 11:34:51 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 11:34:51 base.py[line:865] INFO Added job "Init" to job store "default"
+2017-05-22 11:34:51 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
+2017-05-22 11:34:51 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
+2017-05-22 11:34:51 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
+2017-05-22 11:34:51 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
+2017-05-22 11:34:51 base.py[line:158] INFO Scheduler started
+2017-05-22 11:37:46 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495424267697 (111.193.164.174) 2.00ms
+2017-05-22 11:37:49 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22007531106501104428_1495424270758&_=1495424270759 (111.193.164.174) 3.00ms
+2017-05-22 11:37:49 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22007531106501104428_1495424270760&_=1495424270761 (111.193.164.174) 3.00ms
+2017-05-22 11:37:49 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22007531106501104428_1495424270762&_=1495424270763 (111.193.164.174) 4.00ms
+2017-05-22 11:38:17 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495424299614 (111.193.164.174) 2.00ms
+2017-05-22 11:38:45 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=000544.SZ (123.57.150.251) 144.00ms
+2017-05-22 11:38:45 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=000544.SZ (123.57.150.251) 2.00ms
+2017-05-22 11:38:45 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/000544.SZ?callback=jsonpcallback&_=1495424326259 (111.193.164.174) 3.00ms
+2017-05-22 11:54:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495425247717 (111.193.164.174) 2.00ms
+2017-05-22 11:54:08 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495425248647 (111.193.164.174) 1.00ms
+2017-05-22 11:54:12 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495425254377 (111.193.164.174) 2.00ms
+2017-05-22 11:56:54 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495425414489 (14.204.144.104) 3.00ms
+2017-05-22 12:09:15 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 3.00ms
+2017-05-22 12:09:15 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 2.00ms
+2017-05-22 12:09:17 base.py[line:204] INFO Paused scheduler job processing
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 12:09:17 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-05-22 12:09:17 base.py[line:213] INFO Resumed scheduler job processing
+2017-05-22 12:19:00 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495426736701 (124.128.87.164) 2.00ms
+2017-05-22 12:55:03 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495428904785 (111.193.164.174) 2.00ms
+2017-05-22 12:55:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495428903741 (111.193.164.174) 2.00ms
+2017-05-22 13:01:30 base.py[line:619] INFO Removed job 201
+2017-05-22 13:01:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 13:01:30 CST)" (scheduled at 2017-05-22 13:01:30+08:00)
+2017-05-22 13:01:30 base.py[line:619] INFO Removed job 201
+2017-05-22 13:01:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 13:01:30 CST)" (scheduled at 2017-05-22 13:01:30+08:00)
+2017-05-22 13:02:11 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 13:01:30 CST)" executed successfully
+2017-05-22 13:02:11 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-22 13:01:30 CST)" executed successfully
+2017-05-22 13:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:05:20 CST)" (scheduled at 2017-05-22 13:05:20+08:00)
+2017-05-22 13:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:05:20 CST)" (scheduled at 2017-05-22 13:05:20+08:00)
+2017-05-22 13:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:10:20 CST)" executed successfully
+2017-05-22 13:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:10:20 CST)" executed successfully
+2017-05-22 13:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:10:20 CST)" (scheduled at 2017-05-22 13:10:20+08:00)
+2017-05-22 13:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:15:20 CST)" (scheduled at 2017-05-22 13:10:20+08:00)
+2017-05-22 13:11:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:15:20 CST)" executed successfully
+2017-05-22 13:11:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:15:20 CST)" executed successfully
+2017-05-22 13:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:20:20 CST)" (scheduled at 2017-05-22 13:15:20+08:00)
+2017-05-22 13:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:15:20 CST)" (scheduled at 2017-05-22 13:15:20+08:00)
+2017-05-22 13:16:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:20:20 CST)" executed successfully
+2017-05-22 13:16:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:20:20 CST)" executed successfully
+2017-05-22 13:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:25:20 CST)" (scheduled at 2017-05-22 13:20:20+08:00)
+2017-05-22 13:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:20:20 CST)" (scheduled at 2017-05-22 13:20:20+08:00)
+2017-05-22 13:21:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:25:20 CST)" executed successfully
+2017-05-22 13:21:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:25:20 CST)" executed successfully
+2017-05-22 13:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:30:20 CST)" (scheduled at 2017-05-22 13:25:20+08:00)
+2017-05-22 13:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:25:20 CST)" (scheduled at 2017-05-22 13:25:20+08:00)
+2017-05-22 13:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:30:20 CST)" executed successfully
+2017-05-22 13:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:30:20 CST)" executed successfully
+2017-05-22 13:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:35:20 CST)" (scheduled at 2017-05-22 13:30:20+08:00)
+2017-05-22 13:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:00:20 CST)" (scheduled at 2017-05-22 13:30:20+08:00)
+2017-05-22 13:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:30:20 CST)" (scheduled at 2017-05-22 13:30:20+08:00)
+2017-05-22 13:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 13:30:20 CST)" (scheduled at 2017-05-22 13:30:20+08:00)
+2017-05-22 13:32:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:35:20 CST)" executed successfully
+2017-05-22 13:32:01 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:35:20 CST)" executed successfully
+2017-05-22 13:32:10 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:00:20 CST)" executed successfully
+2017-05-22 13:32:43 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:00:20 CST)" executed successfully
+2017-05-22 13:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:40:20 CST)" (scheduled at 2017-05-22 13:35:20+08:00)
+2017-05-22 13:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:35:20 CST)" (scheduled at 2017-05-22 13:35:20+08:00)
+2017-05-22 13:36:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:40:20 CST)" executed successfully
+2017-05-22 13:36:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:40:20 CST)" executed successfully
+2017-05-22 13:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:45:20 CST)" (scheduled at 2017-05-22 13:40:20+08:00)
+2017-05-22 13:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:40:20 CST)" (scheduled at 2017-05-22 13:40:20+08:00)
+2017-05-22 13:41:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:45:20 CST)" executed successfully
+2017-05-22 13:41:39 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:45:20 CST)" executed successfully
+2017-05-22 13:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:50:20 CST)" (scheduled at 2017-05-22 13:45:20+08:00)
+2017-05-22 13:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:50:20 CST)" (scheduled at 2017-05-22 13:45:20+08:00)
+2017-05-22 13:46:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:50:20 CST)" executed successfully
+2017-05-22 13:46:20 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:50:20 CST)" executed successfully
+2017-05-22 13:46:37 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=10&windcode=002747.sz&type=5 (::1) 4.00ms
+2017-05-22 13:47:26 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=7&windcode=002747.sz&type=5 (::1) 3.00ms
+2017-05-22 13:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:55:20 CST)" (scheduled at 2017-05-22 13:50:20+08:00)
+2017-05-22 13:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:55:20 CST)" (scheduled at 2017-05-22 13:50:20+08:00)
+2017-05-22 13:51:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:55:20 CST)" executed successfully
+2017-05-22 13:51:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 13:55:20 CST)" executed successfully
+2017-05-22 13:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:00:20 CST)" (scheduled at 2017-05-22 13:55:20+08:00)
+2017-05-22 13:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:00:20 CST)" (scheduled at 2017-05-22 13:55:20+08:00)
+2017-05-22 13:56:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:00:20 CST)" executed successfully
+2017-05-22 13:56:29 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:00:20 CST)" executed successfully
+2017-05-22 14:00:20 base.py[line:619] INFO Removed job 260
+2017-05-22 14:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:05:20 CST)" (scheduled at 2017-05-22 14:00:20+08:00)
+2017-05-22 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" (scheduled at 2017-05-22 14:00:20+08:00)
+2017-05-22 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 14:00:20 CST)" (scheduled at 2017-05-22 14:00:20+08:00)
+2017-05-22 14:00:20 base.py[line:619] INFO Removed job 260
+2017-05-22 14:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:05:20 CST)" (scheduled at 2017-05-22 14:00:20+08:00)
+2017-05-22 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" (scheduled at 2017-05-22 14:00:20+08:00)
+2017-05-22 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 14:00:20 CST)" (scheduled at 2017-05-22 14:00:20+08:00)
+2017-05-22 14:02:49 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:05:20 CST)" executed successfully
+2017-05-22 14:02:49 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:05:20 CST)" executed successfully
+2017-05-22 14:03:12 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 14:00:20 CST)" executed successfully
+2017-05-22 14:03:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433013251 (119.163.127.69) 7.00ms
+2017-05-22 14:03:37 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" executed successfully
+2017-05-22 14:03:37 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-22 14:00:20 CST)" executed successfully
+2017-05-22 14:03:55 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" executed successfully
+2017-05-22 14:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:10:20 CST)" (scheduled at 2017-05-22 14:05:20+08:00)
+2017-05-22 14:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:10:20 CST)" (scheduled at 2017-05-22 14:05:20+08:00)
+2017-05-22 14:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:10:20 CST)" executed successfully
+2017-05-22 14:06:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:10:20 CST)" executed successfully
+2017-05-22 14:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:15:20 CST)" (scheduled at 2017-05-22 14:10:20+08:00)
+2017-05-22 14:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:15:20 CST)" (scheduled at 2017-05-22 14:10:20+08:00)
+2017-05-22 14:11:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:15:20 CST)" executed successfully
+2017-05-22 14:11:11 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:15:20 CST)" executed successfully
+2017-05-22 14:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:20:20 CST)" (scheduled at 2017-05-22 14:15:20+08:00)
+2017-05-22 14:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:20:20 CST)" (scheduled at 2017-05-22 14:15:20+08:00)
+2017-05-22 14:16:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:20:20 CST)" executed successfully
+2017-05-22 14:16:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:20:20 CST)" executed successfully
+2017-05-22 14:16:45 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433805456 (61.135.194.211) 205.00ms
+2017-05-22 14:17:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433856231 (61.135.194.211) 2.00ms
+2017-05-22 14:17:50 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22009706612465424567_1495433870238&_=1495433870239 (61.135.194.211) 4.00ms
+2017-05-22 14:17:50 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22009706612465424567_1495433870240&_=1495433870241 (61.135.194.211) 3.00ms
+2017-05-22 14:17:50 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22009706612465424567_1495433870242&_=1495433870243 (61.135.194.211) 2.00ms
+2017-05-22 14:18:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433884977 (111.193.164.174) 2.00ms
+2017-05-22 14:18:35 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22006611615386068672_1495433914909&_=1495433914910 (61.135.194.211) 6.00ms
+2017-05-22 14:18:35 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22006611615386068672_1495433914911&_=1495433914912 (61.135.194.211) 5.00ms
+2017-05-22 14:18:35 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22006611615386068672_1495433914913&_=1495433914914 (61.135.194.211) 3.00ms
+2017-05-22 14:18:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433928413 (61.135.194.211) 2.00ms
+2017-05-22 14:19:02 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433942651 (61.135.194.211) 1.00ms
+2017-05-22 14:19:18 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495433958570 (61.135.194.211) 2.00ms
+2017-05-22 14:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:25:20 CST)" (scheduled at 2017-05-22 14:20:20+08:00)
+2017-05-22 14:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:25:20 CST)" (scheduled at 2017-05-22 14:20:20+08:00)
+2017-05-22 14:21:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:25:20 CST)" executed successfully
+2017-05-22 14:21:19 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:25:20 CST)" executed successfully
+2017-05-22 14:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:30:20 CST)" (scheduled at 2017-05-22 14:25:20+08:00)
+2017-05-22 14:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:30:20 CST)" (scheduled at 2017-05-22 14:25:20+08:00)
+2017-05-22 14:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:30:20 CST)" executed successfully
+2017-05-22 14:26:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:30:20 CST)" executed successfully
+2017-05-22 14:30:20 base.py[line:619] INFO Removed job 230
+2017-05-22 14:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:35:20 CST)" (scheduled at 2017-05-22 14:30:20+08:00)
+2017-05-22 14:30:20 base.py[line:619] INFO Removed job 230
+2017-05-22 14:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" (scheduled at 2017-05-22 14:30:20+08:00)
+2017-05-22 14:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:35:20 CST)" (scheduled at 2017-05-22 14:30:20+08:00)
+2017-05-22 14:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" (scheduled at 2017-05-22 14:30:20+08:00)
+2017-05-22 14:32:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:35:20 CST)" executed successfully
+2017-05-22 14:32:00 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:35:20 CST)" executed successfully
+2017-05-22 14:32:10 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" executed successfully
+2017-05-22 14:33:29 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-22 14:30:20 CST)" executed successfully
+2017-05-22 14:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:40:20 CST)" (scheduled at 2017-05-22 14:35:20+08:00)
+2017-05-22 14:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:40:20 CST)" (scheduled at 2017-05-22 14:35:20+08:00)
+2017-05-22 14:36:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:40:20 CST)" executed successfully
+2017-05-22 14:36:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:40:20 CST)" executed successfully
+2017-05-22 14:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:45:20 CST)" (scheduled at 2017-05-22 14:40:20+08:00)
+2017-05-22 14:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:45:20 CST)" (scheduled at 2017-05-22 14:40:20+08:00)
+2017-05-22 14:41:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:45:20 CST)" executed successfully
+2017-05-22 14:41:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:45:20 CST)" executed successfully
+2017-05-22 14:45:13 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495435513029 (124.133.207.52) 2.00ms
+2017-05-22 14:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:50:20 CST)" (scheduled at 2017-05-22 14:45:20+08:00)
+2017-05-22 14:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:50:20 CST)" (scheduled at 2017-05-22 14:45:20+08:00)
+2017-05-22 14:46:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:50:20 CST)" executed successfully
+2017-05-22 14:46:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:50:20 CST)" executed successfully
+2017-05-22 14:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" (scheduled at 2017-05-22 14:50:20+08:00)
+2017-05-22 14:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" (scheduled at 2017-05-22 14:50:20+08:00)
+2017-05-22 14:51:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" executed successfully
+2017-05-22 14:51:10 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" executed successfully
+2017-05-22 14:55:20 base.py[line:619] INFO Removed job 205
+2017-05-22 14:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" (scheduled at 2017-05-22 14:55:20+08:00)
+2017-05-22 14:55:20 base.py[line:619] INFO Removed job 205
+2017-05-22 14:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" (scheduled at 2017-05-22 14:55:20+08:00)
+2017-05-22 14:56:09 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" executed successfully
+2017-05-22 14:56:11 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-22 14:55:20 CST)" executed successfully
+2017-05-22 15:05:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-23 15:05:00 CST)" (scheduled at 2017-05-22 15:05:00+08:00)
+2017-05-22 15:05:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-23 15:05:00 CST)" (scheduled at 2017-05-22 15:05:00+08:00)
+2017-05-22 15:07:57 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-23 15:05:00 CST)" executed successfully
+2017-05-22 15:09:06 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-05-23 15:05:00 CST)" executed successfully
+2017-05-22 15:28:06 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495438086678 (119.163.127.116) 3.00ms
+2017-05-22 15:28:43 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495438124798 (119.163.127.116) 2.00ms
+2017-05-22 15:28:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery22005682661298318792_1495438127694&_=1495438127695 (119.163.127.116) 3.00ms
+2017-05-22 15:28:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery22005682661298318792_1495438127696&_=1495438127697 (119.163.127.116) 3.00ms
+2017-05-22 15:28:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery22005682661298318792_1495438127698&_=1495438127699 (119.163.127.116) 3.00ms
+2017-05-22 15:29:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery220008476919476598133_1495438146221&_=1495438146222 (119.163.127.116) 3.00ms
+2017-05-22 15:29:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery220008476919476598133_1495438146223&_=1495438146224 (119.163.127.116) 2.00ms
+2017-05-22 15:29:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery220008476919476598133_1495438146225&_=1495438146226 (119.163.127.116) 3.00ms

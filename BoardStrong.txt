@@ -1,0 +1,7 @@
+0 886055.WI 保险 行业板块 Strong:1 
+0 601318.SH 中国平安 Strong:1 
+1 601628.SH 中国人寿 Strong:1 
+2 601336.SH 新华保险 Strong:1 
+1 886029.WI 机场 行业板块 Strong:1 
+0 600004.SH 白云机场 Strong:1 
+1 600009.SH 上海机场 Strong:1 
