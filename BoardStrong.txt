@@ -5,3 +5,7 @@
 1 886029.WI 机场 行业板块 Strong:1 
 0 600004.SH 白云机场 Strong:1 
 1 600009.SH 上海机场 Strong:1 
+2 886043.WI 酒类 行业板块 Strong:1 
+0 600519.SH 贵州茅台 Strong:1 
+1 000568.SZ 泸州老窖 Strong:1 
+2 000858.SZ 五粮液 Strong:1 

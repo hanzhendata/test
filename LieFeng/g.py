@@ -651,12 +651,38 @@ def Update_All():
 		UpdateSlice(windcode)
 		wd[ windcode ] = ktype
 	cursor.close()
+
+def TechAnanysis(windcode_list,datetime):
+    cursor = cnx.cursor()
+    ktype_list= [5,6]
+    for windcode in windcode_list:
+        for ktype in ktype_list :
+            if ktype > 6:
+                tablename = 'stocks_history_days'
+            else:       
+                tablename = 'stocks_history_minutes'
+                    
+            ktypestr = str(ktype)
+            
+            indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,cnx,limit=2000)       
+           
+            tech = Stock.StocksTech(indicator)
+            for i in range(len(indicator)) :
+            	index = -i-1
+            	if indicator[index]['date'].date() == datetime.date() :
+            		print windcode,indicator[index]
+            		print 'dea diff macd',tech['dea'][index],tech['diff'][index], tech['macd'][index]
+            		print 'fast k d j',tech['fast_k'][index],tech['fast_d'][index], tech['fast_j'][index]
+            		print 'slow k d j',tech['slow_k'][index],tech['slow_d'][index], tech['slow_j'][index]
+            		print 'pb 1 2 6 ',tech['pb1'][index],tech['pb2'][index], tech['pb6'][index]
+
+
 # windcode_dict  = {}
 # Slice()
 # UpdateZero('600895.SH')
 # Update_All()
 # Warning_Init()
-Test()
+TechAnanysis(['603989.SH','600463.SH','000504.SZ'],datetime.now())
 	
 # current_date = datetime.now()	
 # datestr = current_date.strftime("%Y-%m-%d")		

@@ -791,12 +791,13 @@ def Get5MintueNumber(current_time):
 			})
 	rt = 0
 	for wt in worktime:
-		begin = current_time.replace( hour=wt['begin'].hour,minute=wt['begin'].minute )
-		end   = current_time.replace( hour=wt['end'].hour,  minute=wt['end'].minute )
+		begin = current_time.replace( hour=wt['begin'].hour,  minute=wt['begin'].minute )
+		end   = current_time.replace( hour=  wt['end'].hour  ,  minute=  wt['end'].minute )
 		bs = (current_time-begin).total_seconds()
 		es = (end-current_time).total_seconds()
 		if bs>=0 and es>0 :
-			rt = bs % 300
+			rt = bs / 300
+			break
 	return rt
 
 

@@ -503,3 +503,37 @@
 2017-05-22 18:05:13 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447502671 (61.135.194.211) 2.00ms
 2017-05-22 18:05:21 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447511108 (61.135.194.211) 2.00ms
 2017-05-22 18:05:31 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447520963 (61.135.194.211) 2.00ms
+2017-05-22 20:55:30 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=10&windcode=300344.sz&type=5 (::1) 4.00ms
+2017-05-22 21:20:38 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495459239222 (114.248.69.36) 2.00ms
+2017-05-22 21:30:00 base.py[line:123] INFO Running job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-23 21:30:00 CST)" (scheduled at 2017-05-22 21:30:00+08:00)
+2017-05-22 21:30:00 base.py[line:123] INFO Running job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-23 21:30:00 CST)" (scheduled at 2017-05-22 21:30:00+08:00)
+2017-05-22 21:30:00 base.py[line:135] INFO Job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-23 21:30:00 CST)" executed successfully
+2017-05-22 21:30:00 base.py[line:135] INFO Job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-05-23 21:30:00 CST)" executed successfully
+2017-05-22 21:30:17 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 21:30:17 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 21:30:17 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 21:30:17 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 21:30:17 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-22 21:30:17 base.py[line:865] INFO Added job "Init" to job store "default"
+2017-05-22 21:30:17 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
+2017-05-22 21:30:17 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
+2017-05-22 21:30:17 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
+2017-05-22 21:30:17 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
+2017-05-22 21:30:17 base.py[line:158] INFO Scheduler started
+2017-05-22 21:30:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495459835841 (114.248.69.36) 2.00ms
+2017-05-22 21:30:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495459836130 (114.248.69.36) 2.00ms
+2017-05-22 21:32:46 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495459963001 (114.248.69.36) 3.00ms
+2017-05-22 21:32:47 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495459962587 (114.248.69.36) 2.00ms
+2017-05-22 21:43:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 3.00ms
+2017-05-22 21:43:07 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 2.00ms
+2017-05-22 21:43:09 base.py[line:204] INFO Paused scheduler job processing
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-22 21:43:09 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-05-22 21:43:09 base.py[line:213] INFO Resumed scheduler job processing

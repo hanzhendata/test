@@ -732,7 +732,7 @@ stock_wmrb_str_fields = {
     'source': fields.Integer,
     'calc_date'  : fields.String,
     'wm_type'  : fields.Integer, 
-    'wm_list': fields.List({
+    'data': fields.Nested({
         'windcode': fields.String,    
         'name' : fields.String,
         'warning_status': fields.Integer,
@@ -743,7 +743,7 @@ stock_wmrb_str_fields = {
         "warning_priority": fields.Integer,
         "warning_sellinglevel": fields.Integer,
         "warning_buyinglevel": fields.Integer,
-        }),
+    }),
     
 
 }
@@ -1405,6 +1405,8 @@ def WarningMessage_Init(GdbbFlag=False):
                     Windcode_Stype[index][windcode].update({'warning_status':0,})
                     if ts.ErrorCode!=0 :
                         continue
+                    if stype==2 or stype==3:
+                        continue
                     ws = 3
                     try:
                         cursor.execute(sql_p,{
@@ -1455,7 +1457,7 @@ def WarningMessage_Init(GdbbFlag=False):
 
                     continue
                  
-                if ws == 3 or index==2 or index==3: # lose watch or break central 
+                if ws == 3 : # or index==2 or index==3 lose watch or break central 
                     ws = 0           
                 Windcode_Stype[index][windcode].update({
                     #wtype,ktype,date,stype,price
@@ -2404,7 +2406,7 @@ def WarningMessage(ktype,LastFlag=False):
         if Windcode_Dict[windcode]['wsq'+ktypestr] ==0 :
             continue
         W= Windcode_Dict[windcode][ktypestr][ -Windcode_Dict[windcode]['wsq'+ktypestr]: ]
-        if (dtime-Windcode_Dict[windcode]['8'][-1]['date']).seconds < (6*3600) :
+        if (dtime-Windcode_Dict[windcode]['8'][-1]['date']).total_seconds() < (6*3600) :
             temp= Windcode_Dict[windcode]['8'].pop()
             if temp['open'] !=0 and temp['close'] !=0 :
                 W.insert(0,temp)
@@ -2430,8 +2432,8 @@ def WarningMessage(ktype,LastFlag=False):
             if Windcode_Stype[index][windcode]['warning_status']==0 :
                 if ktype == 6 :
                     print index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1]                    
-                    # if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
-                    #     continue
+                    if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
+                        continue
                     print 'week ktype ',ktype,windcode,Windcode_Dict[windcode]['tech'+ktypestr]['fast_j'][-1],Windcode_Dict[windcode]['tech'+ktypestr]['slow_j'][-1]
                     if index==2 or index==3:                         
                         if Windcode_Dict[windcode]['tech'+ktypestr]['fast_j'][-1] < 5:
@@ -2508,8 +2510,8 @@ def WarningMessage(ktype,LastFlag=False):
                             
                     if Windcode_Stype[index][windcode]['warning_status'] == 1:
                         print index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1]
-                        # if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
-                        #     continue
+                        if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
+                            continue
                         print 'week ktype ',ktype,windcode,Windcode_Stype[index][windcode]['warning_status']
                         gd=FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr])
                         gd2=FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr], index=-2)
