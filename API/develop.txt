@@ -495,3 +495,11 @@
 2017-05-22 15:29:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery220008476919476598133_1495438146221&_=1495438146222 (119.163.127.116) 3.00ms
 2017-05-22 15:29:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery220008476919476598133_1495438146223&_=1495438146224 (119.163.127.116) 2.00ms
 2017-05-22 15:29:05 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery220008476919476598133_1495438146225&_=1495438146226 (119.163.127.116) 3.00ms
+2017-05-22 17:15:53 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=7&windcode=002747.sz&type=5 (::1) 3.00ms
+2017-05-22 17:16:09 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=10&windcode=002747.sz&type=5 (::1) 4.00ms
+2017-05-22 17:52:08 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495446727756 (111.193.164.174) 2.00ms
+2017-05-22 17:52:09 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495446728101 (111.193.164.174) 1.00ms
+2017-05-22 18:05:13 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447502228 (61.135.194.211) 3.00ms
+2017-05-22 18:05:13 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447502671 (61.135.194.211) 2.00ms
+2017-05-22 18:05:21 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447511108 (61.135.194.211) 2.00ms
+2017-05-22 18:05:31 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495447520963 (61.135.194.211) 2.00ms
