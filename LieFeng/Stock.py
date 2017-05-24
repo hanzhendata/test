@@ -2112,15 +2112,15 @@ def StocksStrongIndexCalc(StockList,Require_Num=30,KDJFast=True):
 				num_list[ri] = num_list[ri] + 1
 	return num_list
 		
-def StocksFundIndexCalc(Windcode_Dict,ktype,StockList,Default=True,Require_Num=30):
+def StocksFundIndexCalc(Windcode_Dict,ktype,StockList7,StockList8,Default=True,Require_Num=30):
 	Insert_Before_Num = 500
 	rt=[]
 	for ri in range(Require_Num):
 		rt.append({'num':0,'windcode':[]}) 
 	
 	ds='ta'+str(ktype)
-	for index in range(0,len(StockList)):
-		stock = StockList[index]
+	for index in range(0,len(StocksList7)):
+		stock = StocksList7[index]
 		windcode = stock['windcode']
 		board =Windcode_Dict[ windcode ]
 		close =[ board[ds][x]['close' ] for x in range(0, len(board[ds]) ) ]
@@ -2161,6 +2161,7 @@ def StocksFundIndexCalc(Windcode_Dict,ktype,StockList,Default=True,Require_Num=3
 			if v0[-1-ri]<=aa and  v0[-2-ri]<=aa :
 				continue
 			if  c0[-1-ri]/c0[-6-ri] <1.2 and c0[-1-ri]/c0[-4-ri] <1.15 :
+				
 				rt[ri]['windcode'].append(windcode)
 			rt[ri]['num'] = rt[ri]['num'] + 1
 		del c0,close,v0,volume
@@ -2273,9 +2274,11 @@ def StocksBreakCentral(Windcode_Dict,StocksList7,StocksList8,offset=0,KDJFast=Tr
 			W_D= stock['slow_d'][-1-offset]
 		if W_K<=W_D :
 			continue
-		W_PB1 = stock['pb1'][offset]
-		W_PB2 = stock['pb2'][offset]
-		W_PB6 = stock['pb6'][offset]
+		if stock['diff'][-1-offset] <=0:
+			continue
+		W_PB1 = stock['pb1'][-1-offset]
+		W_PB2 = stock['pb2'][-1-offset]
+		W_PB6 = stock['pb6'][-1-offset]
 		if W_PB1>W_PB6 and W_PB2>W_PB6:
 			select_code.append(windcode)
 	# print len(select_code)

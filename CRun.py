@@ -619,7 +619,7 @@ def DaysCalc(Type,Connect,WindPy):
 
 	
 	 
-	rt = Stock.StocksFundIndexCalc(windcode_dict,7,windcode_list7,Require_Num=Require_Num)
+	rt = Stock.StocksFundIndexCalc(windcode_dict,7,windcode_list7,windcode_list8,Require_Num=Require_Num)
 	FundIndexNumList = [ rt[x]['num'] for x in range(len(rt))]
 	IndexSave(FundIndexNumList,'FundIndex',times,Connect) 
 

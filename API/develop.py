@@ -732,7 +732,7 @@ stock_wmrb_str_fields = {
     'source': fields.Integer,
     'calc_date'  : fields.String,
     'wm_type'  : fields.Integer, 
-    'data': fields.Nested({
+    'data': fields.List(fields.Nested({
         'windcode': fields.String,    
         'name' : fields.String,
         'warning_status': fields.Integer,
@@ -743,7 +743,7 @@ stock_wmrb_str_fields = {
         "warning_priority": fields.Integer,
         "warning_sellinglevel": fields.Integer,
         "warning_buyinglevel": fields.Integer,
-    }),
+    })),
     
 
 }
@@ -1495,16 +1495,29 @@ def WarningMessage_Init(GdbbFlag=False):
             tablename = 'stocks_history_days'
         else:       
             tablename = 'stocks_history_minutes'
-        for windcode in  Windcode_Dict  :
-            # print windcode
-            
+        if ktype==0:
+            num = 20
+        else:
+            num = 2000
+        for windcode in  Windcode_Dict  :           # print windcode
             ktypestr = str(ktype)
             if Windcode_Dict[windcode].get(ktypestr) is None:
-                indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,Connector,limit=2000)
+                indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,Connector,limit=num)
                 Windcode_Dict[windcode].update( { ktypestr : indicator,})
             else:
-                indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,Connector,limit=2000,StartDate=Windcode_Dict[windcode][ktypestr][-1]['date'])
-                Windcode_Dict[windcode][ktypestr].extend( indicator  ) 
+                indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,Connector,limit=num,StartDate=Windcode_Dict[windcode][ktypestr][-1]['date'])
+                Windcode_Dict[windcode][ktypestr].extend( indicator  )             
+            if ktype==8:
+                wsd=WindPy.wsd(windcode,"open,high,low,close",current_time,current_time,"Period=W;PriceAdj=F")
+                if not Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
+                    if indicator[-1]['date'] < wsd.Times[0] :
+                        Windcode_Dict[windcode][ktypestr].append({
+                            'date':wsd.Times[0],
+                            'open':wsd.Data[0][0],
+                            'high':wsd.Data[1][0],
+                            'low' :wsd.Data[2][0],
+                            'close':wsd.Data[3][0],
+                            })
             Windcode_Dict[windcode]['tech'+ktypestr] = Stock.StocksTech(Windcode_Dict[windcode][ktypestr])
     for index in range(len(Windcode_Stype)) : 
         if  not GdbbFlag :        
@@ -1628,6 +1641,9 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
     datelist=[]
     for sdate in cursor :
         datelist.insert(0,sdate[0])
+
+    # for sdate in datelist:
+    #     if sdate
     if stocksNewInfoDate.date() >= stocksCalcDate.date() :
         cal_date = datelist[-1]
     else:
@@ -1640,6 +1656,11 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
             continue 
         if sdate.hour == 11 :
             continue 
+        # ts = WindPy.tdayscount(sdate,current_datetime,"")                
+        # if ts.ErrorCode==0 :
+        #     if (  ts.Data[0][0] >Config.BreakCentralPermitDays) or \
+        #     (  ts.Data[0][0] >Config.BreakVolumePermitDays):
+        #         continue
         if Wd_Rb.get(windcode) is None:
             Wd_Rb [windcode] = {'name':bname,'warning_status':0,'type':[],'date':[],'wsq2':0,'wsq5':0,'wsq6':0,}
         Wd_Rb[windcode]['type'].append(stype)
@@ -2405,19 +2426,33 @@ def WarningMessage(ktype,LastFlag=False):
             continue
         if Windcode_Dict[windcode]['wsq'+ktypestr] ==0 :
             continue
-        W= Windcode_Dict[windcode][ktypestr][ -Windcode_Dict[windcode]['wsq'+ktypestr]: ]
-        if (dtime-Windcode_Dict[windcode]['8'][-1]['date']).total_seconds() < (6*3600) :
-            temp= Windcode_Dict[windcode]['8'].pop()
-            if temp['open'] !=0 and temp['close'] !=0 :
-                W.insert(0,temp)
-        temp = {
-                'date':W[-1]['date'],
-                'open':W[0 ]['open'],
-                'high':max([ x['high'] for x in W ]),
-                'low' :min([ x['low']  for x in W ]),
-                'close':W[-1]['close'],
-        }
-        Windcode_Dict[windcode]['8'].append(temp) 
+        
+        
+        wsd=WindPy.wsd(windcode,"open,high,low,close",current_time,current_time,"Period=W;PriceAdj=F")
+        if not Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
+            if (dtime-wsd.Times[0]).total_seconds() < (6*3600) :
+                temp= Windcode_Dict[windcode]['8'].pop() 
+            temp ={
+                'date':wsd.Times[0],
+                'open':wsd.Data[0][0],
+                'high':wsd.Data[1][0],
+                'low' :wsd.Data[2][0],
+                'close':wsd.Data[3][0],
+            }
+        else:
+            W= Windcode_Dict[windcode][ktypestr][ -Windcode_Dict[windcode]['wsq'+ktypestr]: ]
+            if  (dtime-wsd.Times[0]).total_seconds() < (6*3600):
+                temp = Windcode_Dict[windcode]['8'].pop() 
+                if temp['open'] !=0 and temp['close'] !=0 :
+                    W.insert(0,temp)
+            temp = {
+                    'date':W[-1]['date'],
+                    'open':W[0 ]['open'],
+                    'high':max([ x['high'] for x in W ]),
+                    'low' :min([ x['low']  for x in W ]),
+                    'close':W[-1]['close'],
+            }
+            Windcode_Dict[windcode]['8'].append(temp) 
         Windcode_Dict[windcode]['tech8'] = Stock.StocksTech(Windcode_Dict[windcode]['8'])
         for index in index_list :    
             if Windcode_Stype[index].get(windcode) is None :
@@ -2438,8 +2473,8 @@ def WarningMessage(ktype,LastFlag=False):
                     if index==2 or index==3:                         
                         if Windcode_Dict[windcode]['tech'+ktypestr]['fast_j'][-1] < 5:
                             if index==2:
-                                if Windcode_Dict[windcode]['tech'+ktypestr]['pb1'][-1]>Windcode_Dict[windcode]['tech'+ktypestr]['pb6'][-1] and \
-                                   Windcode_Dict[windcode]['tech'+ktypestr]['pb2'][-1]>Windcode_Dict[windcode]['tech'+ktypestr]['pb6'][-1] :
+                                if Windcode_Dict[windcode]['tech8']['pb1'][-1]>Windcode_Dict[windcode]['tech8']['pb6'][-1] and \
+                                   Windcode_Dict[windcode]['tech8']['pb2'][-1]>Windcode_Dict[windcode]['tech8']['pb6'][-1]:
                                     ws=1
                                 else:
                                     continue
@@ -2457,7 +2492,13 @@ def WarningMessage(ktype,LastFlag=False):
                     
                     else:
                         if Windcode_Dict[windcode]['tech'+ktypestr]['slow_j'][-1] < 5:
-                            ws = 1
+                            if index==1:
+                                if close>Windcode_Dict[windcode]['tech8']['pb6'][-1] :
+                                    ws = 1
+                                else:
+                                    continue
+                            else:
+                                ws = 1
                             Windcode_Stype[index][windcode].update({
                                 'warning_status':ws,
                                 'warning_priority':wp,
@@ -2550,8 +2591,14 @@ def WarningMessage(ktype,LastFlag=False):
                                     'type':3,
                                     'warning_ktype':ktype,
                                     'warning_date':dtime,})
-                            if gl==2 and index !=7:                
-                                ws = 4
+                            if gl==2 and index !=7: 
+                                if index==1:
+                                    if close>Windcode_Dict[windcode]['tech8']['pb6'][-1] :
+                                        ws = 4
+                                    else:
+                                        continue
+                                else:               
+                                    ws = 4
                                 Windcode_Stype[index][windcode].update({
                                     'warning_status':ws,
                                     'warning_priority':wp,
@@ -2952,9 +2999,63 @@ def PushSignal(current_datetime):
     WarningMessage_Delete(bdate-timedelta(days=1))
     SignalRebulidToFront(bdate)
 
+def SignalToEnd(current_datetime,RebulidFlag=True):
+    Connector = mysql.connector.connect(**Config.db_config)
+    stocksWM = []
+    num = 0
+    if RebulidFlag:
+        sql_rb = "select id,wtype,wpriority,wsellinglevel,wbuyinglevel,stype,ktype,windcode,name,price,date from  stocks_warning_rebuild where bdate=%(bdate)s "
+        cursor_rb = Connector.cursor()
+        cursor_rb.execute(sql_rb,{'bdate':current_datetime,})
+    
+        for rid,rw,wp,wsl,wbl,rs,rk,windcode,name,price,date in cursor_rb:
+            
+            stocksWM.append( {
+                    'id': rid,
+                    'windcode': windcode,
+                    'name' : name,
+                    'warning_status': rw,
+                    'warning_priority':wp,
+                    'warning_sellinglevel':wsl,
+                    'warning_buyinglevel' :wbl,
+                    'type' : rs,
+                    'update_date' : date.strftime("%Y-%m-%d %H:%M:%S"),
 
-def SendWarningMessage(message):
-    url = "http://www.hanzhendata.com/ihanzhendata/warning/buyorder"
+                    'price'   : str(price) ,
+                })  
+        cursor_rb.close()
+    else:
+        sql_rb = "select id,wtype,wpriority,wsellinglevel,wbuyinglevel,stype,ktype,windcode,name,price,date from  stocks_warning_develop where date>%(bdate)s "
+        cursor_rb = Connector.cursor()
+        cursor_rb.execute(sql_rb,{'bdate':current_datetime.strftime("%Y-%m-%d"),})
+    
+        for rid,rw,wp,wsl,wbl,rs,rk,windcode,name,price,date in cursor_rb:
+            
+            stocksWM.append( {
+                    'id': rid,
+                    'windcode': windcode,
+                    'name' : name,
+                    'warning_status': rw,
+                    'warning_priority':wp,
+                    'warning_sellinglevel':wsl,
+                    'warning_buyinglevel' :wbl,
+                    'type' : rs,
+                    'update_date' : date.strftime("%Y-%m-%d %H:%M:%S"),
+
+                    'price'   : str(price) ,
+                })  
+        cursor_rb.close()        
+    # Connector.commit()
+    stocksWMRB ={}
+    stocksWMRB['source'] = 0
+    stocksWMRB['calc_date'] = current_datetime.strftime("%Y-%m-%d")
+    stocksWMRB['wm_type']=0
+    stocksWMRB['data'] = stocksWM
+    with app.app_context():
+        SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields)  ) 
+    Connector.close()
+
+def SendWarningMessage(message,url = "http://www.hanzhendata.com/ihanzhendata/warning/buyorder"):    
 
     headers = {
         'content-type': "application/json",
@@ -3096,14 +3197,14 @@ if __name__ == '__main__':
     
     if Debug:                
         # EventDrivenStocks()
-            
-        Days_Init()
-        dt = datetime.now()-timedelta(days=1)
+        
+        # Days_Init()
+        dt = datetime.now()-timedelta(days=0)
         # PushSignal(dt)   
         
+        SignalToEnd(dt,RebulidFlag=False)
         
-        
-        WarningMessage_SignalRebuild(dt,SendWM=True)
+        # WarningMessage_SignalRebuild(dt,SendWM=True)
 
         # WM_Rebulid()
         # WarningMessage_Init()

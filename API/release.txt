@@ -1,0 +1,62 @@
+2017-05-24 01:22:27 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-24 01:22:27 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-24 01:22:27 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-24 01:22:27 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-24 01:22:27 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-05-24 01:22:27 base.py[line:865] INFO Added job "Init" to job store "default"
+2017-05-24 01:22:27 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
+2017-05-24 01:22:27 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
+2017-05-24 01:22:27 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
+2017-05-24 01:22:27 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
+2017-05-24 01:22:27 base.py[line:158] INFO Scheduler started
+2017-05-24 04:09:02 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 3.00ms
+2017-05-24 04:09:02 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/ (123.57.150.251) 2.00ms
+2017-05-24 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-24 22:00:00 CST)" (scheduled at 2017-05-24 05:00:00+08:00)
+2017-05-24 05:10:01 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-24 22:00:00 CST)" executed successfully
+2017-05-24 06:50:00 base.py[line:123] INFO Running job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-24 06:50:00 CST)" (scheduled at 2017-05-24 06:50:00+08:00)
+2017-05-24 06:50:00 base.py[line:204] INFO Paused scheduler job processing
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-05-24 06:50:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-05-24 06:50:00 base.py[line:213] INFO Resumed scheduler job processing
+2017-05-24 06:50:00 base.py[line:135] INFO Job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-25 06:50:00 CST)" executed successfully
+2017-05-24 08:40:33 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495586434008 (61.148.242.212) 2.00ms
+2017-05-24 08:41:08 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495586468983 (61.148.242.212) 2.00ms
+2017-05-24 08:55:57 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495587359194 (49.92.149.174) 3.00ms
+2017-05-24 08:56:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery220023850046045301676_1495587365215&_=1495587365216 (49.92.149.174) 3.00ms
+2017-05-24 08:56:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery220023850046045301676_1495587365217&_=1495587365218 (49.92.149.174) 2.00ms
+2017-05-24 08:56:04 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery220023850046045301676_1495587365219&_=1495587365220 (49.92.149.174) 3.00ms
+2017-05-24 08:56:30 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495587392943 (49.92.149.174) 2.00ms
+2017-05-24 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-24 09:31:00 CST)" (scheduled at 2017-05-24 09:31:00+08:00)
+2017-05-24 09:32:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-24 09:32:30 CST)" (scheduled at 2017-05-24 09:32:30+08:00)
+2017-05-24 09:32:30 base.py[line:619] INFO Removed job 101
+2017-05-24 09:33:37 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-24 09:32:30 CST)" executed successfully
+2017-05-24 09:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:35:20 CST)" (scheduled at 2017-05-24 09:35:20+08:00)
+2017-05-24 09:37:27 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:40:20 CST)" executed successfully
+2017-05-24 09:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:40:20 CST)" (scheduled at 2017-05-24 09:40:20+08:00)
+2017-05-24 09:42:27 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:45:20 CST)" executed successfully
+2017-05-24 09:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:45:20 CST)" (scheduled at 2017-05-24 09:45:20+08:00)
+2017-05-24 09:47:27 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:50:20 CST)" executed successfully
+2017-05-24 09:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:50:20 CST)" (scheduled at 2017-05-24 09:50:20+08:00)
+2017-05-24 09:52:27 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:55:20 CST)" executed successfully
+2017-05-24 09:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 09:55:20 CST)" (scheduled at 2017-05-24 09:55:20+08:00)
+2017-05-24 09:57:30 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 10:00:20 CST)" executed successfully
+2017-05-24 09:58:38 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495591113444 (119.163.127.69) 2.00ms
+2017-05-24 10:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 10:00:20 CST)" (scheduled at 2017-05-24 10:00:20+08:00)
+2017-05-24 10:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-24 10:30:20 CST)" (scheduled at 2017-05-24 10:00:20+08:00)
+2017-05-24 10:01:12 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495591273947 (114.242.250.85) 2.00ms
+2017-05-24 10:01:15 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=000001.SH&callback=jQuery220044413744003871425_1495591276731&_=1495591276732 (114.242.250.85) 4.00ms
+2017-05-24 10:01:15 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399905.SZ&callback=jQuery220044413744003871425_1495591276733&_=1495591276734 (114.242.250.85) 3.00ms
+2017-05-24 10:01:15 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksindex/?num=18&type=&windcode=399006.SZ&callback=jQuery220044413744003871425_1495591276735&_=1495591276736 (114.242.250.85) 3.00ms
+2017-05-24 10:03:33 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 10:05:20 CST)" executed successfully
+2017-05-24 10:03:48 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-24 10:30:20 CST)" executed successfully
+2017-05-24 10:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 10:10:20 CST)" (scheduled at 2017-05-24 10:05:20+08:00)
+2017-05-24 10:05:34 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-25 09:31:00 CST)" executed successfully
+2017-05-24 10:06:06 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1495591560847 (119.163.127.69) 3.00ms
+2017-05-24 10:06:31 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-24 10:10:20 CST)" executed successfully

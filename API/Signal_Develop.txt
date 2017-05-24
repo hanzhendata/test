@@ -1,3 +1,5 @@
+ code 002261.SZ date 2017-05-23 14:00:00 type 3 Signal 1 ktype 6
+ code 002258.SZ date 2017-05-23 14:00:00 type 1 Signal 1 ktype 6
  code 600684.SH date 2017-05-09 11:30:00 type 1 Signal 1 ktype 6
  code 002383.SZ date 2017-05-11 11:30:00 type 1 Signal 1 ktype 6
  code 000965.SZ date 2017-05-10 15:00:00 type 0 Signal 1 ktype 6
@@ -10,12 +12,13 @@
  code 601607.SH date 2017-04-27 11:30:00 type 0 Signal 1 ktype 6
  code 600550.SH date 2017-05-08 15:00:00 type 0 Signal 1 ktype 6
  code 002262.SZ date 2017-05-11 10:30:00 type 1 Signal 1 ktype 6
- code 601996.SH date 2017-04-25 11:30:00 type 1 Signal 1 ktype 6
- code 603989.SH date 2017-05-19 14:00:00 type 0 Signal 1 ktype 6
  code 601633.SH date 2017-05-04 10:30:00 type 1 Signal 1 ktype 6
  code 002728.SZ date 2017-04-27 10:30:00 type 1 Signal 1 ktype 6
  code 002016.SZ date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
+ code 601996.SH date 2017-04-25 11:30:00 type 1 Signal 1 ktype 6
+ code 002127.SZ date 2017-05-23 15:00:00 type 0 Signal 1 ktype 6
  code 600350.SH date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
+ code 300334.SZ date 2017-05-23 11:30:00 type 0 Signal 1 ktype 6
  code 000672.SZ date 2017-05-08 14:00:00 type 1 Signal 1 ktype 6
  code 601933.SH date 2017-04-28 14:00:00 type 0 Signal 1 ktype 6
  code 600219.SH date 2017-05-11 10:30:00 type 1 Signal 1 ktype 6
@@ -24,19 +27,24 @@
  code 000402.SZ date 2017-05-09 10:30:00 type 1 Signal 1 ktype 6
  code 300129.SZ date 2017-04-25 14:00:00 type 1 Signal 1 ktype 6
  code 000533.SZ date 2017-05-09 10:30:00 type 1 Signal 1 ktype 6
+ code 300285.SZ date 2017-05-23 15:00:00 type 1 Signal 1 ktype 6
  code 002603.SZ date 2017-04-25 15:00:00 type 1 Signal 1 ktype 6
  code 600523.SH date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 601566.SH date 2017-05-05 15:00:00 type 0 Signal 1 ktype 6
+ code 002050.SZ date 2017-05-22 15:00:00 type 0 Signal 1 ktype 6
  code 000789.SZ date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 603328.SH date 2017-05-09 10:30:00 type 1 Signal 1 ktype 6
+ code 300237.SZ date 2017-05-23 14:00:00 type 1 Signal 1 ktype 6
  code 600814.SH date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
+ code 002573.SZ date 2017-05-23 14:00:00 type 1 Signal 1 ktype 6
  code 600548.SH date 2017-05-10 10:30:00 type 1 Signal 1 ktype 6
  code 002765.SZ date 2017-05-10 11:30:00 type 1 Signal 1 ktype 6
  code 600463.SH date 2017-05-19 14:00:00 type 0 Signal 1 ktype 6
  code 002523.SZ date 2017-04-25 14:00:00 type 1 Signal 1 ktype 6
+ code 600258.SH date 2017-05-23 10:30:00 type 1 Signal 1 ktype 6
  code 600508.SH date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 002595.SZ date 2017-05-02 10:30:00 type 1 Signal 1 ktype 6
- code 002158.SZ date 2017-05-10 14:00:00 type 0 Signal 1 ktype 6
+ code 600874.SH date 2017-05-22 14:00:00 type 0 Signal 1 ktype 6
  code 002558.SZ date 2017-05-10 15:00:00 type 1 Signal 1 ktype 6
  code 600723.SH date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 000026.SZ date 2017-05-12 10:30:00 type 1 Signal 1 ktype 6
@@ -44,15 +52,22 @@
  code 002322.SZ date 2017-05-08 15:00:00 type 0 Signal 1 ktype 6
  code 000517.SZ date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 002040.SZ date 2017-05-09 14:00:00 type 1 Signal 1 ktype 6
+ code 601231.SH date 2017-05-23 14:00:00 type 0 Signal 1 ktype 6
  code 000949.SZ date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 600594.SH date 2017-04-25 14:00:00 type 1 Signal 1 ktype 6
+ code 300023.SZ date 2017-05-23 11:30:00 type 3 Signal 1 ktype 6
  code 002651.SZ date 2017-05-10 14:00:00 type 1 Signal 1 ktype 6
+ code 002747.SZ date 2017-05-22 15:00:00 type 0 Signal 1 ktype 6
+ code 300259.SZ date 2017-05-23 15:00:00 type 0 Signal 1 ktype 6
  code 000596.SZ date 2017-05-08 10:30:00 type 1 Signal 1 ktype 6
  code 002434.SZ date 2017-05-09 10:30:00 type 1 Signal 1 ktype 6
  code 000913.SZ date 2017-05-09 10:30:00 type 1 Signal 1 ktype 6
+ code 300344.SZ date 2017-05-23 15:00:00 type 0 Signal 1 ktype 6
  code 600668.SH date 2017-04-25 10:30:00 type 1 Signal 1 ktype 6
  code 600035.SH date 2017-05-11 10:30:00 type 1 Signal 1 ktype 6
  code 600269.SH date 2017-05-09 10:30:00 type 1 Signal 1 ktype 6
  code 600161.SH date 2017-05-10 11:30:00 type 0 Signal 1 ktype 6
  code 002282.SZ date 2017-05-08 11:30:00 type 0 Signal 1 ktype 6
  code 601238.SH date 2017-05-11 15:00:00 type 0 Signal 1 ktype 6
+ code 601238.SH date 2017-05-23 14:00:00 type 0 Signal 1 ktype 6
+ code 002236.SZ date 2017-05-08 10:30:00 type 0 Signal 1 ktype 6

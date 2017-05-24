@@ -732,7 +732,7 @@ def UserStocks():
     response = requests.request("GET", url)
     if response.status_code == 200 :
         data = response.json()
-        # print 'EventDrivenStocks ',response.status_code,data
+        print 'UserStocks ',response.status_code,data
         if data['status'] == 1 :
             for stock_user in data['data'] :
                 uid =  stock_user['uid']
