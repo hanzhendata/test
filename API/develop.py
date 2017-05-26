@@ -1688,7 +1688,7 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
             if windcode not in stocksLabel :### 510500.SH
                 continue
             if Wd_Rb.get(windcode) is None:
-                Wd_Rb [windcode] = {'warning_status':4,'type':[],'date':[],'wsq2':0,'wsq5':0,'wsq6':0,}
+                Wd_Rb [windcode] = {'warning_status':40,'type':[],'date':[],'wsq2':0,'wsq5':0,'wsq6':0,}
                 Wd_Rb[windcode].update(stocksLabel[ windcode] )
                 Wd_Rb[windcode]['warning_price']=stocksUser[uid][windcode]['warning_price']
                 Wd_Rb[windcode]['warning_date'] =cal_date
@@ -1696,27 +1696,6 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
             Wd_Rb[windcode]['type'].append(7)
             Wd_Rb[windcode]['date'].append(cal_date)
 
-
-    # for windcode in Wd_Rb:
-    #     cursor_w.execute(sql_w,{'code':windcode,})
-    #     if cursor_w.rowcount>0:
-    #         temp = cursor_w.fetchone()
-    #         ts = WindPy.tdayscount(temp[2],datetime.now(),"")
-    #         stype = temp[3]
-    #         if ts.ErrorCode!=0 or ( stype==2 and ts.Data[0][0] >Config.BreakCentralPermitDays) or ( stype==3 and ts.Data[0][0] >Config.BreakVolumePermitDays):
-    #             Wd_Rb[windcode].update({'warning_status':0,})
-    #             continue
-    #         ws = temp[0]            
-    #         Wd_Rb[windcode].update({'warning_status':ws,})            
-    #         if ws==1 :
-    #             Wd_Rb[windcode].update({'warning_status':10,'warning_ktype':temp[1],'warning_date':temp[2],})            
-    #     else:
-    #         Wd_Rb[windcode].update({'warning_status':0,})
-    #     num += 1
-    #     # if num>6:
-    #     #     break       
-
-    # cursor_w.close()
         
 
     
@@ -1736,33 +1715,16 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
             indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,Connector,limit=2000)
             Wd_Rb[windcode].update( { ktypestr : indicator,})
             if ktype == 8 :
-                last_date = Stock.StocksGetLastDate(ktype,current_date)
-                if last_date is None:
-                    continue
-                ds =str(ktype)
-                
-                board = Wd_Rb[windcode]     
-                if board.get(ds) is None or len(board[ds]) ==0 :
-                    continue
-                board['ta'+str(ktype)] = board[ds]
-                board['ta'+str(ktype-1)] = []
-                for ri in range(7):
-                    board['ta'+str(ktype-1)].insert(0,{
-                        'date':stocksOHLC[windcode]['update_date'][-ri-1],
-                        'open':stocksOHLC[windcode]['open'][-ri-1],
-                        'high':stocksOHLC[windcode]['high'][-ri-1],
-                        'low' :stocksOHLC[windcode]['low'][-ri-1],
-                        'close':stocksOHLC[windcode]['close'][-ri-1],
-                        })
-                # print board[ds][-1]['date'],last_date[-1]
-                if len(last_date)>0 and board[ds][-1]['date'].date() < last_date[-1]:
-                    last_data=Stock.StocksGetLastData_New( board ,ktype,last_date)
-
-                    if last_data is not None and len(last_data) > 0: 
-                        last_data.update({'date':last_date[-1]})           
-                        Wd_Rb[windcode][ds].append(last_data) 
-                board.pop('ta'+str(ktype),None)  
-                board.pop('ta'+str(ktype-1),None)
+                wsd=WindPy.wsd(windcode,"open,high,low,close",current_datetime,current_datetime,"Period=W;PriceAdj=F")
+                if not Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
+                    if indicator[-1]['date'] < wsd.Times[0] :
+                        Wd_Rb[windcode][ktypestr].append({
+                            'date':wsd.Times[0],
+                            'open':wsd.Data[0][0],
+                            'high':wsd.Data[1][0],
+                            'low' :wsd.Data[2][0],
+                            'close':wsd.Data[3][0],
+                            })
             Wd_Rb[windcode]['tech'+ktypestr] = Stock.StocksTech(indicator)
           
     cursor = Connector.cursor()
@@ -1778,20 +1740,26 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
         for wi in range( wdlen ):
             
             print windcode, Wd_Rb[windcode]['type'],wdlen,wi,Wd_Rb[windcode]['warning_status']
-            stype =Wd_Rb[windcode]['type'][wi]            
-            try:
-                tdo = WindPy.tdaysoffset(1,Wd_Rb[windcode]['date'][wi],"")
+            stype =Wd_Rb[windcode]['type'][wi]  
+            if stype!=2 and stype!=3:
+                days = 1
+            elif stype==2:
+                days = Config.BreakCentralPermitDays
+            else:
+                days = Config.BreakVolumePermitDays         
+            tdo = WindPy.tdaysoffset(days,Wd_Rb[windcode]['date'][wi],"")
+            if  Stock.CheckWindData(tdo):
                 tdo= tdo.Data[0][0]
-            except Exception, e:
-                tdo = Wd_Rb[windcode]['date'][wi]+timedelta(days=1)
+            else:
+                tdo = Wd_Rb[windcode]['date'][wi]+timedelta(days=days)
             if windcode=="600035.SH":
                 print windcode,tdo,Wd_Rb[windcode]['date'][wi]
             tdo = tdo.replace(hour = 16)
                
             # if stype!=2 and stype!=3 and Wd_Rb[windcode]['warning_status'] !=0 :
             #     continue
-            if stype==2 or stype==3:
-                Wd_Rb[windcode]['warning_status'] = 0
+            # if stype==2 or stype==3:
+            #     Wd_Rb[windcode]['warning_status'] = 0
             wsb = Wd_Rb[windcode]['warning_status']            
             if Wd_Rb[windcode]['warning_status'] == 0 :
                 ktype=6
@@ -2064,8 +2032,6 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
     del Wd_Rb
     print stocksWM
  
-
-
 def WarningMessageAll():
     if not TradeDayFlag :
         print WarningMessageAll.__name__,"Error! not TradeDay!"
@@ -2359,42 +2325,14 @@ def WarningMessage(ktype,LastFlag=False):
         if LastFlag: 
             last_time = current_time.replace(hour=15,minute=0,second=0, microsecond = 0)           
             wsi=Slice.SliceMinute_WindPy(windcode,WindPy,last_time-timedelta(minutes=BarSize-1),last_time+timedelta(minutes=1))
-            temp={'date':current_time.replace(hour=15,minute=0,second=0, microsecond = 0),
-                'open': 0 ,
-                'high':  0,
-                'low':   0,
-                'close': 0 ,
-                'volume':0 ,}
-            if wsi is not None:
-                temp.update(wsi)
         else:
-            wsi = WindPy.wsq(windcode, "rt_time,rt_open,rt_high,rt_low,rt_last,rt_vol")
-            if not Stock.CheckWindData(wsi,Message='WSQ Error') :
-                temp = Windcode_Dict[windcode][ktypestr][-1]
-                temp.update({'date':current_time,} )
-            else:   
-                dtime = int( wsi.Data[0][0 ] )
-                if dtime > 100:                
-                    dtime = datetime.strptime(str(dtime),'%H%M%S')
-                    temp = {
-                        'date':  current_time.replace(second=0 , microsecond = 0,
-                            hour= dtime.hour, minute=dtime.minute - dtime.minute % 5),
-                        'open':  wsi.Data[1][0] ,
-                        'high':  wsi.Data[2][0],
-                        'low':   wsi.Data[3][0],
-                        'close': wsi.Data[4][0] ,
-                        'volume':wsi.Data[5][0] ,
-                    }
-                else:
-                    temp = Windcode_Dict[windcode][ktypestr][-1]
-                    temp.update( {
-                        'date':  current_time,
-                        'open': 0 ,
-                        'high':  0,
-                        'low':   0,
-                        'close': 0 ,
-                        'volume':0 ,
-                    } ) 
+            cm = current_time.minute
+            last_time =current_time.replace(second=0 , microsecond = 0, hour= current_time.hour, minute=cm - cm % BarSize )
+        wsi=Slice.SliceMinute_WindPy(windcode,WindPy,last_time-timedelta(minutes=BarSize-1),last_time+timedelta(minutes=1))
+        temp={'date':last_time, 'open': 0 , 'high':  0, 'low':   0,  'close': 0 , 'volume':0 ,}
+        if wsi is not None:
+            temp.update(wsi)
+ 
         if Windcode_Dict[windcode][ktypestr][-1]['date'] < temp['date']:
             Windcode_Dict[windcode][ktypestr].append(temp) 
             Windcode_Dict[windcode]['wsq'+ktypestr] += 1
@@ -2421,45 +2359,32 @@ def WarningMessage(ktype,LastFlag=False):
         #     continue
         
         close =  Windcode_Dict[windcode][ktypestr][-1]['close']
-        print windcode,close,Windcode_Dict[windcode]['wsq'+ktypestr]
+        # print windcode,close,Windcode_Dict[windcode]['wsq'+ktypestr]
         if close==0:
             continue
         if Windcode_Dict[windcode]['wsq'+ktypestr] ==0 :
             continue
         
         
-        wsd=WindPy.wsd(windcode,"open,high,low,close",current_time,current_time,"Period=W;PriceAdj=F")
-        if not Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
-            if (dtime-wsd.Times[0]).total_seconds() < (6*3600) :
-                temp= Windcode_Dict[windcode]['8'].pop() 
-            temp ={
-                'date':wsd.Times[0],
-                'open':wsd.Data[0][0],
-                'high':wsd.Data[1][0],
-                'low' :wsd.Data[2][0],
-                'close':wsd.Data[3][0],
-            }
-        else:
-            W= Windcode_Dict[windcode][ktypestr][ -Windcode_Dict[windcode]['wsq'+ktypestr]: ]
-            if  (dtime-wsd.Times[0]).total_seconds() < (6*3600):
-                temp = Windcode_Dict[windcode]['8'].pop() 
-                if temp['open'] !=0 and temp['close'] !=0 :
-                    W.insert(0,temp)
-            temp = {
-                    'date':W[-1]['date'],
-                    'open':W[0 ]['open'],
-                    'high':max([ x['high'] for x in W ]),
-                    'low' :min([ x['low']  for x in W ]),
-                    'close':W[-1]['close'],
-            }
-            Windcode_Dict[windcode]['8'].append(temp) 
+        W= Windcode_Dict[windcode][ktypestr][ -Windcode_Dict[windcode]['wsq'+ktypestr]: ]
+        temp = Windcode_Dict[windcode]['8'].pop() 
+        if temp['open'] !=0 and temp['close'] !=0 :
+            W.insert(0,temp)
+        temp = {
+                'date':W[-1]['date'],
+                'open':W[0 ]['open'],
+                'high':max([ x['high'] for x in W ]),
+                'low' :min([ x['low']  for x in W ]),
+                'close':W[-1]['close'],
+        }
+        Windcode_Dict[windcode]['8'].append(temp) 
         Windcode_Dict[windcode]['tech8'] = Stock.StocksTech(Windcode_Dict[windcode]['8'])
         for index in index_list :    
             if Windcode_Stype[index].get(windcode) is None :
                 continue
             
                        
-            print datetime.now(),'index ',index,windcode,Windcode_Stype[index][windcode]['warning_status']
+            # print datetime.now(),'index ',index,windcode,Windcode_Stype[index][windcode]['warning_status']
             ws = 0
             wp = 0
             wbl = 0
@@ -2553,7 +2478,7 @@ def WarningMessage(ktype,LastFlag=False):
                         print index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1]
                         if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
                             continue
-                        print 'week ktype ',ktype,windcode,Windcode_Stype[index][windcode]['warning_status']
+                        print 'week ktype ',ktype,windcode
                         gd=FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr])
                         gd2=FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr], index=-2)
                         if gd == 4  or gd2 ==4:
@@ -2664,7 +2589,15 @@ def WarningMessage(ktype,LastFlag=False):
         with app.app_context():
             SendWarningMessage(  [marshal(task, stock_wm_str_fields) for task in stocksWM] ) 
     else:
-        print stocksWM  
+        print stocksWM 
+        stocksWMRB ={}
+        stocksWMRB['source'] = 0
+        stocksWMRB['calc_date'] = current_time.strftime("%Y-%m-%d")
+        stocksWMRB['wm_type']=0
+        stocksWMRB['data'] = stocksWM
+        with app.app_context():
+            SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields) ,url="http://www.hanzhendata.com/ihanzhendata/warning/rebuildworder" ) 
+    Connector.close() 
 
 def WarningMessage_Test(ktype):
     ktypestr = str(ktype)     
@@ -3049,10 +2982,13 @@ def SignalToEnd(current_datetime,RebulidFlag=True):
     stocksWMRB ={}
     stocksWMRB['source'] = 0
     stocksWMRB['calc_date'] = current_datetime.strftime("%Y-%m-%d")
-    stocksWMRB['wm_type']=0
+    if RebulidFlag:
+        stocksWMRB['wm_type']=1
+    else:
+        stocksWMRB['wm_type']=0
     stocksWMRB['data'] = stocksWM
     with app.app_context():
-        SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields)  ) 
+        SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields) ,url="http://www.hanzhendata.com/ihanzhendata/warning/rebuildworder" ) 
     Connector.close()
 
 def SendWarningMessage(message,url = "http://www.hanzhendata.com/ihanzhendata/warning/buyorder"):    
@@ -3076,10 +3012,6 @@ def RefreshRequest():
     if response.status_code == 200 :
         print 'RefreshRequest ',response.status_code,response.json()
     requests.request("GET", url, headers={'Connection':'close'})
-  
-
-
-
 
 def update_message(message):
     for c in clients:
@@ -3164,9 +3096,7 @@ ReleaseFlag = False
 # scheduler = BackgroundScheduler()
 scheduler = TornadoScheduler()
 
-logging.basicConfig(level=logging.INFO, 
-        format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s', 
-        datefmt='%Y-%m-%d %H:%M:%S',  filename='develop.txt',  filemode='a')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S',  filename='develop.txt',  filemode='a')
 
 
 if __package__ is None:
@@ -3222,8 +3152,8 @@ if __name__ == '__main__':
     # print len(Windcode_Dict),Windcode_Dict.get('601933.SH').keys()
     # print Windcode_Stype[0].get('601933.SH')
     # WarningMessage_Week()    
-    # dt = datetime.now()-timedelta(days=1)
-    # WM_Rebulid(builddate=dt)
+    dt = datetime.now()-timedelta(days=1)
+    WM_Rebulid(builddate=dt)
     # PushSignal(dt)
 
     # WarningMessage2()
@@ -3242,6 +3172,6 @@ if __name__ == '__main__':
         port = Config.Release_Port
     else:
         port = Config.Develop_Port
-    server.listen(port)
-    IOLoop.instance().start()
+    # server.listen(port)
+    # IOLoop.instance().start()
 

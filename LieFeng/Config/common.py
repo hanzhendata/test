@@ -4,6 +4,8 @@ from functools import wraps
 import requests
 import variable
 
+Stocks_WorkingTime=[{'begin':datetime.strptime('0930',"%H%M"),'end':datetime.strptime('1130',"%H%M")},
+{'begin':datetime.strptime('1300',"%H%M"),'end':datetime.strptime('1500',"%H%M")}]
 
 def  NanToZero(m):
 	if m!=m:
@@ -732,7 +734,7 @@ def UserStocks():
     response = requests.request("GET", url)
     if response.status_code == 200 :
         data = response.json()
-        print 'UserStocks ',response.status_code,data
+        # print 'UserStocks ',response.status_code,data
         if data['status'] == 1 :
             for stock_user in data['data'] :
                 uid =  stock_user['uid']
@@ -749,7 +751,8 @@ def UserStocks():
                         stock_user['average_price'],
                         'amount':stock_user['amount']}})
             # stocksUser = data['data']
-    requests.request("GET", url, headers={'Connection':'close'})    
+    requests.request("GET", url, headers={'Connection':'close'}) 
+    print stocksUser,len(stocksUser)   
     return stocksUser
 
 def WarningMessage_Delete(builddate):
@@ -767,36 +770,17 @@ def WarningMessage_Delete(builddate):
     Connector.commit()
     cursor.close()
 
-def SendWarningMessage(message):
-    url = "http://www.hanzhendata.com/ihanzhendata/warning/buyorder"
 
-    headers = {
-        'content-type': "application/json",
-        'cache-control': "no-cache",
-    }
-    print message
-    if len(message)==0 or message is None :
-        return
-    response = requests.request("POST", url, data=json.dumps(message), headers=headers)
-    if response.status_code == 200 :
-        print response.status_code,response.json()
-    requests.request("POST", url, headers={'Connection':'close'})
 
-def Get5MintueNumber(current_time):
-	worktime=[]	
-	for wt in variable.Stocks_WorkingTime:
-		worktime.append({
-			'begin':datetime.strptime(wt['begin'],"%H%M"),
-			'end'  :datetime.strptime(wt['end']  ,"%H%M"),
-			})
+def Get5MintueNumber(current_time):	
 	rt = 0
-	for wt in worktime:
+	for wt in Stocks_WorkingTime: 
 		begin = current_time.replace( hour=wt['begin'].hour,  minute=wt['begin'].minute )
 		end   = current_time.replace( hour=  wt['end'].hour  ,  minute=  wt['end'].minute )
 		bs = (current_time-begin).total_seconds()
 		es = (end-current_time).total_seconds()
-		if bs>=0 and es>0 :
-			rt = bs / 300
+		if bs>=0 and es>=0 :
+			rt = int(bs / 300)
 			break
 	return rt
 

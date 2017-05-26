@@ -592,7 +592,9 @@ def DaysCalc(Type,Connect,WindPy):
 			stocksStrong.append(board)	
 			continue
 		if board['isReady'] :
-			stocksReady.append(board)
+			windcode = board['windcode']			
+			if windcode_dict[windcode]['ta8'][-1]['close']>board['pb6'][-1] :
+				stocksReady.append(board)
 			continue
 	
 	# for board in windcode_list8:

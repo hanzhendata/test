@@ -652,7 +652,7 @@ def Update_All():
 		wd[ windcode ] = ktype
 	cursor.close()
 
-def TechAnanysis(windcode_list,datetime):
+def Tech8Ananysis(windcode_list,datetime):
     cursor = cnx.cursor()
     ktype_list= [8]
     for windcode in windcode_list:
@@ -677,26 +677,61 @@ def TechAnanysis(windcode_list,datetime):
             tech = Stock.StocksTech(indicator)
             for i in range(len(indicator)) :
             	index = -i-1
-            	if indicator[index]['date'].date() == datetime.date() or (index<-10 and ktype==8) :
+            	if indicator[index]['date'].date() == datetime.date() or (index>-10 and ktype==8) :
             		print windcode,indicator[index]
             		print 'dea diff macd',tech['dea'][index],tech['diff'][index], tech['macd'][index]
             		print 'fast k d j',tech['fast_k'][index],tech['fast_d'][index], tech['fast_j'][index]
             		print 'slow k d j',tech['slow_k'][index],tech['slow_d'][index], tech['slow_j'][index]
             		print 'pb 1 2 6 ',tech['pb1'][index],tech['pb2'][index], tech['pb6'][index]
 
-
+def TechAnanysis(windcode,ktype,datetime):
+    cursor = cnx.cursor()
+    
+    if ktype > 6:
+        tablename = 'stocks_history_days'
+    else:       
+        tablename = 'stocks_history_minutes'
+            
+    ktypestr = str(ktype)
+    
+    indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,cnx,limit=2000)       
+    
+    indicator.append({
+            'date': "2017-05-24 10:30:00",
+            'open': 25.33,
+            'high': 25.83,
+            'low' : 24.92,
+            'close': 25.78,
+            })
+    indicator.append({
+            'date': "2017-05-24 11:30:00",
+            'open': 25.4,
+            'high': 26,
+            'low' : 24.92,
+            'close': 25.39,
+            })
+    tech = Stock.StocksTech(indicator)
+    for i in range(len(indicator)) :
+        index = -i-1
+        if index>-10 :
+            print windcode,indicator[index]
+            print 'dea diff macd',tech['dea'][index],tech['diff'][index], tech['macd'][index]
+            print 'fast k d j',tech['fast_k'][index],tech['fast_d'][index], tech['fast_j'][index]
+            print 'slow k d j',tech['slow_k'][index],tech['slow_d'][index], tech['slow_j'][index]
+            print 'pb 1 2 6 ',tech['pb1'][index],tech['pb2'][index], tech['pb6'][index]
 # windcode_dict  = {}
 # Slice()
 # UpdateZero('600895.SH')
 # Update_All()
 # Warning_Init()
-TechAnanysis(['603989.SH','600463.SH','000333.SZ','000504.SZ','300288.SZ'],datetime.now())
-# TechAnanysis([ '002508.SZ','002372.SZ'],datetime.now()-timedelta(days=1))
+# TechAnanysis(['603989.SH','600463.SH','000333.SZ','000504.SZ','300288.SZ'],datetime.now())
+Tech8Ananysis([ '002508.SZ','002372.SZ','603199.SH'],datetime.now()-timedelta(days=0))
+# TechAnanysis('002365.SZ',6,datetime.now())
 # current_date = datetime.now()	
 # datestr = current_date.strftime("%Y-%m-%d")		
 # wsdata=w.wset("sectorconstituent","date="+datestr+";sectorid=a001010100000000")
 # if  Config.CheckWindData(wsdata):
-	
+
 
 # 	for index in range(0,len(wsdata.Data[0])):		
 # 		sdate = wsdata.Data[0][index]

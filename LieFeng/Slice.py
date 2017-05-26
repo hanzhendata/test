@@ -505,14 +505,30 @@ def SliceMinuteUpdate_New(prod_code,ktype_list,connect,UpdateFlag = True):
 def SliceMinute_WindPy(windcode,WindPy,starttime,endtime):
 	
 	wsi = WindPy.wsi(windcode,"open,high,low,close,volume",starttime,endtime,"PriceAdj=F")	
-	if not CheckWindData(wsi,Message= windcode+'WSI Error') :
+	if not CheckWindData(wsi,Message= windcode+' WSI Error') :
+		return None
+	W= [ ]
+	for index in range( len(wsi.Times)):
+		if math.isnan(wsi.Data[0][index]) or math.isnan(wsi.Data[1][index]) or \
+			math.isnan(wsi.Data[2][index]) or math.isnan(wsi.Data[3][index])  :#or math.isnan(wsi.Data[4][index])
+			continue
+		W.append ({
+			'date' : wsi.Times[index],
+			'open' : wsi.Data[0][index],
+			'high' : wsi.Data[1][index],
+			'low'  : wsi.Data[2][index],
+			'close': wsi.Data[3][index],
+			'volume':wsi.Data[4][index],		
+		})
+	if len(W)==0:
+		print SliceMinute_WindPy.__name__,windcode,wsi
 		return None
 	return {
-	     'open' : wsi.Data[0][0],
-	     'high' : max(wsi.Data[1]),
-	     'low'  : min(wsi.Data[2]),
-	     'close': wsi.Data[3][-1],
-	     'volume':wsi.Data[4][-1],
+		'date':W[-1]['date'],
+		'open':W[0 ]['open'],
+		'high':max([ x['high'] for x in W ]),
+		'low' :min([ x['low']  for x in W ]),
+		'close':W[-1]['close'],
 	}
 
 

@@ -20,4 +20,4 @@ Develop_Port = 3309
 Warning_Release_TableName='stocks_warning'
 Warning_Develop_TableName='stocks_warning_develop'
 
-Stocks_WorkingTime=[{'begin':'0930','end':'1130'},{'begin':'1300','end':'1500'}]
+

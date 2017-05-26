@@ -2112,13 +2112,13 @@ def StocksStrongIndexCalc(StockList,Require_Num=30,KDJFast=True):
 				num_list[ri] = num_list[ri] + 1
 	return num_list
 		
-def StocksFundIndexCalc(Windcode_Dict,ktype,StockList7,StockList8,Default=True,Require_Num=30):
+def StocksFundIndexCalc(Windcode_Dict,ktype,StocksList7,StocksList8,Default=True,Require_Num=30):
 	Insert_Before_Num = 500
 	rt=[]
 	for ri in range(Require_Num):
 		rt.append({'num':0,'windcode':[]}) 
 	
-	ds='ta'+str(ktype)
+	ds=  'ta'+str(ktype)	
 	for index in range(0,len(StocksList7)):
 		stock = StocksList7[index]
 		windcode = stock['windcode']
@@ -2133,10 +2133,10 @@ def StocksFundIndexCalc(Windcode_Dict,ktype,StockList7,StockList8,Default=True,R
 		s0.extend(sopen)
 		volume=[ board[ds][x]['volume' ] for x in range(0, len(board[ds]) ) ] 
 		v0 = [ volume[0] ] * Insert_Before_Num
-		v0.extend(volume)	
+		v0.extend(volume)
+		
 		for ri in  range( Require_Num ):
-			# if ri==0 and windcode=='600804.SH':
-			# 	print windcode, c0[-1], c0[-3],c0[-4], c0[-6],ma33[-1]
+			
 			if c0[-4-ri] == 0 or c0[-6-ri] == 0 :
 				continue
 			if c0[-1-ri] <= s0[-1-ri] :
@@ -2161,12 +2161,26 @@ def StocksFundIndexCalc(Windcode_Dict,ktype,StockList7,StockList8,Default=True,R
 			if v0[-1-ri]<=aa and  v0[-2-ri]<=aa :
 				continue
 			if  c0[-1-ri]/c0[-6-ri] <1.2 and c0[-1-ri]/c0[-4-ri] <1.15 :
-				
 				rt[ri]['windcode'].append(windcode)
 			rt[ri]['num'] = rt[ri]['num'] + 1
 		del c0,close,v0,volume
-	# for ri in range( Require_Num ):
-	# 	print rt[ri]
+	dsplus1= 'ta'+str(ktype+1)
+	for ri in range( Require_Num ):
+		week_windcode = []
+		for windcode in rt[ri]['windcode'] :
+			board =Windcode_Dict[ windcode ]
+			# datelist =  [ board[ds][x]['date' ] for x in range(0, len(board[ds]) ) ]
+			dateplus1 = [ board[dsplus1][x]['date' ] for x in range(0, len(board[dsplus1]) ) ]
+			dcp = -1
+			cd0=board[ds][-1-ri]['date' ]
+			stock8 = [ StocksList8[x]  for x in range(len(StocksList8)) if StocksList8[x]['windcode']==windcode] [0]
+			while(cd0<dateplus1[ dcp] and dcp>=-len(stock8['pb1'][dcp])):
+				dcp -=1
+			if cd0 >= dateplus1[ dcp ] :
+				if stock8['diff'][dcp]>0 and stock8['pb1'][dcp]>stock8['pb6'][dcp] and stock8['pb2'][dcp]>stock8['pb6'][dcp] :
+					week_windcode.append(windcode)
+		rt[ri]['windcode'] = week_windcode[:]
+		# print rt[ri]
 	gc.collect()
 	return rt
 
