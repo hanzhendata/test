@@ -521,7 +521,7 @@ def SliceMinute_WindPy(windcode,WindPy,starttime,endtime):
 			'volume':wsi.Data[4][index],		
 		})
 	if len(W)==0:
-		print SliceMinute_WindPy.__name__,windcode,wsi
+		# print SliceMinute_WindPy.__name__,windcode,wsi
 		return None
 	return {
 		'date':W[-1]['date'],

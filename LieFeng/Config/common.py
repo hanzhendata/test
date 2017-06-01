@@ -752,7 +752,7 @@ def UserStocks():
                         'amount':stock_user['amount']}})
             # stocksUser = data['data']
     requests.request("GET", url, headers={'Connection':'close'}) 
-    print stocksUser,len(stocksUser)   
+    # print stocksUser,len(stocksUser)   
     return stocksUser
 
 def WarningMessage_Delete(builddate):

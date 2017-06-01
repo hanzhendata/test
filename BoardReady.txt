@@ -1,4 +1,4 @@
-0 886052.WI 银行 行业板块 Strong:0 
-0 600036.SH 招商银行 Strong:0 
-1 601939.SH 建设银行 Strong:0 
-1 886002.WI 石油天然气 行业板块 Strong:0 
+0 886002.WI 石油天然气 行业板块 Strong:0 
+0 600028.SH 中国石化 Strong:0 
+1 886033.WI 汽车 行业板块 Strong:0 
+0 600104.SH 上汽集团 Strong:0 

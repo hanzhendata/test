@@ -1509,7 +1509,8 @@ def WarningMessage_Init(GdbbFlag=False):
                 Windcode_Dict[windcode][ktypestr].extend( indicator  )             
             if ktype==8:
                 wsd=WindPy.wsd(windcode,"open,high,low,close",current_time,current_time,"Period=W;PriceAdj=F")
-                if not Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
+                if  Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
+                    # print windcode ,wsd.Times[0],indicator[-1]['date'],wsd
                     if indicator[-1]['date'] < wsd.Times[0] :
                         Windcode_Dict[windcode][ktypestr].append({
                             'date':wsd.Times[0],
@@ -1716,7 +1717,7 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
             Wd_Rb[windcode].update( { ktypestr : indicator,})
             if ktype == 8 :
                 wsd=WindPy.wsd(windcode,"open,high,low,close",current_datetime,current_datetime,"Period=W;PriceAdj=F")
-                if not Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
+                if Stock.CheckWindData(wsd,Message=' Week WSQ Error') :
                     if indicator[-1]['date'] < wsd.Times[0] :
                         Wd_Rb[windcode][ktypestr].append({
                             'date':wsd.Times[0],
@@ -2031,6 +2032,14 @@ def WarningMessage_SignalRebuild(current_datetime,SendWM=False):
     Connector.close()
     del Wd_Rb
     print stocksWM
+    stocksWMRB ={}
+    stocksWMRB['source'] = 0
+    stocksWMRB['calc_date'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    stocksWMRB['wm_type']=1
+    stocksWMRB['data'] = stocksWM
+    with app.app_context():
+        SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields) ,url="http://www.hanzhendata.com/ihanzhendata/warning/rebuildworder" ) 
+    
  
 def WarningMessageAll():
     if not TradeDayFlag :
@@ -2082,7 +2091,7 @@ def WM_Rebulid(builddate=None):
         builddate = datetime.now()
     if not TradeDayFlag :
         print WM_Rebulid.__name__,"Error not TradeDay!"
-        return 
+        # return 
     # WarningMessage_Delete(builddate)
     WarningMessage_SignalRebuild(builddate,SendWM=True)
     gc.collect()
@@ -2298,7 +2307,16 @@ def WarningMessage2(LastFlag=False):
         with app.app_context():
             SendWarningMessage(  [marshal(task, stock_wm_str_fields) for task in stocksWM] ) 
     else:
-        print stocksWM  
+        print stocksWM 
+        if len(stocksWM) > 0 : 
+            stocksWMRB ={}
+            stocksWMRB['source'] = 0
+            stocksWMRB['calc_date'] = current_time.strftime("%Y-%m-%d")
+            stocksWMRB['wm_type']=0
+            stocksWMRB['data'] = stocksWM
+            with app.app_context():
+                SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields) ,url="http://www.hanzhendata.com/ihanzhendata/warning/rebuildworder" ) 
+    
 
 def WarningMessage(ktype,LastFlag=False):
     if ktype==5:
@@ -2367,9 +2385,10 @@ def WarningMessage(ktype,LastFlag=False):
         
         
         W= Windcode_Dict[windcode][ktypestr][ -Windcode_Dict[windcode]['wsq'+ktypestr]: ]
+
         temp = Windcode_Dict[windcode]['8'].pop() 
         if temp['open'] !=0 and temp['close'] !=0 :
-            W.insert(0,temp)
+            W.insert(0,temp)            
         temp = {
                 'date':W[-1]['date'],
                 'open':W[0 ]['open'],
@@ -2390,10 +2409,10 @@ def WarningMessage(ktype,LastFlag=False):
             wbl = 0
             wsl = 0
             if Windcode_Stype[index][windcode]['warning_status']==0 :
-                if ktype == 6 :
-                    print index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1]                    
+                if ktype == 6 :                                       
                     if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
                         continue
+                    print windcode,index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1] 
                     print 'week ktype ',ktype,windcode,Windcode_Dict[windcode]['tech'+ktypestr]['fast_j'][-1],Windcode_Dict[windcode]['tech'+ktypestr]['slow_j'][-1]
                     if index==2 or index==3:                         
                         if Windcode_Dict[windcode]['tech'+ktypestr]['fast_j'][-1] < 5:
@@ -2474,12 +2493,12 @@ def WarningMessage(ktype,LastFlag=False):
                                     'warning_date':dtime,
                                     })
                             
-                    if Windcode_Stype[index][windcode]['warning_status'] == 1:
-                        print index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1]
+                    if Windcode_Stype[index][windcode]['warning_status'] == 1:                        
                         if index<4 and index!=1 and Windcode_Dict[windcode]['tech8']['fast_k'][-1] <=Windcode_Dict[windcode]['tech8']['fast_d'][-1]:
                             continue
-                        print 'week ktype ',ktype,windcode
-                        gd=FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr])
+                        print windcode,'ktype ',ktype,'stype ',index,Windcode_Dict[windcode]['tech8']['fast_k'][-1],Windcode_Dict[windcode]['tech8']['fast_d'][-1]
+                        
+                        gd =FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr])
                         gd2=FourIndicator.GoldenDead(Windcode_Dict[windcode]['tech'+ktypestr], index=-2)
                         if gd == 4  or gd2 ==4:
                             if Windcode_Stype[index][windcode].get('gdbb') is None:
@@ -2590,13 +2609,14 @@ def WarningMessage(ktype,LastFlag=False):
             SendWarningMessage(  [marshal(task, stock_wm_str_fields) for task in stocksWM] ) 
     else:
         print stocksWM 
-        stocksWMRB ={}
-        stocksWMRB['source'] = 0
-        stocksWMRB['calc_date'] = current_time.strftime("%Y-%m-%d")
-        stocksWMRB['wm_type']=0
-        stocksWMRB['data'] = stocksWM
-        with app.app_context():
-            SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields) ,url="http://www.hanzhendata.com/ihanzhendata/warning/rebuildworder" ) 
+        if len(stocksWM) > 0 :
+            stocksWMRB ={}
+            stocksWMRB['source'] = 0
+            stocksWMRB['calc_date'] = current_time.strftime("%Y-%m-%d")
+            stocksWMRB['wm_type']=0
+            stocksWMRB['data'] = stocksWM
+            with app.app_context():
+                SendWarningMessage(  marshal(stocksWMRB, stock_wmrb_str_fields) ,url="http://www.hanzhendata.com/ihanzhendata/warning/rebuildworder" ) 
     Connector.close() 
 
 def WarningMessage_Test(ktype):
@@ -2933,6 +2953,10 @@ def PushSignal(current_datetime):
     SignalRebulidToFront(bdate)
 
 def SignalToEnd(current_datetime,RebulidFlag=True):
+    if ReleaseFlag:
+        print SignalToEnd.__name__,' current in Reelase Vesion'
+        return 
+    
     Connector = mysql.connector.connect(**Config.db_config)
     stocksWM = []
     num = 0
@@ -2957,7 +2981,7 @@ def SignalToEnd(current_datetime,RebulidFlag=True):
                     'price'   : str(price) ,
                 })  
         cursor_rb.close()
-    else:
+    else:        
         sql_rb = "select id,wtype,wpriority,wsellinglevel,wbuyinglevel,stype,ktype,windcode,name,price,date from  stocks_warning_develop where date>%(bdate)s "
         cursor_rb = Connector.cursor()
         cursor_rb.execute(sql_rb,{'bdate':current_datetime.strftime("%Y-%m-%d"),})
@@ -3118,7 +3142,7 @@ if __name__ == '__main__':
     WindPy.start()
     print "Start time:",datetime.now()
     job_init  = scheduler.add_job(func=Init, trigger='cron', day_of_week='0-6',hour='5,22' ,replace_existing=True)
-    job_sinit = scheduler.add_job(func=WarningMessage_Week, trigger='cron', day_of_week='0-6',hour='21',minute='30',replace_existing=True)
+    job_winit = scheduler.add_job(func=WarningMessage_Week, trigger='cron', day_of_week='0-6',hour='21',minute='30',replace_existing=True)
     job_sinit = scheduler.add_job(func=Sche_Init, trigger='cron', day_of_week='0-6',hour='6',minute='50',replace_existing=True)
     job_minit = scheduler.add_job(func=OHLC_Update, trigger='cron', day_of_week='0-6',hour='9',minute='31',replace_existing=True)
     job_wmrb  = scheduler.add_job(func=WM_Rebulid, trigger='cron', day_of_week='0-6',hour='23',replace_existing=True)
@@ -3152,8 +3176,8 @@ if __name__ == '__main__':
     # print len(Windcode_Dict),Windcode_Dict.get('601933.SH').keys()
     # print Windcode_Stype[0].get('601933.SH')
     # WarningMessage_Week()    
-    dt = datetime.now()-timedelta(days=1)
-    WM_Rebulid(builddate=dt)
+    # dt = datetime.now()-timedelta(days=4)
+    # WM_Rebulid(builddate=dt)
     # PushSignal(dt)
 
     # WarningMessage2()
@@ -3172,6 +3196,6 @@ if __name__ == '__main__':
         port = Config.Release_Port
     else:
         port = Config.Develop_Port
-    # server.listen(port)
-    # IOLoop.instance().start()
+    server.listen(port)
+    IOLoop.instance().start()
 

@@ -439,7 +439,7 @@ def DaysCalc(Type,Connect,WindPy):
 	
 	    return
 	print TradeDayFlag    
-	suspend0 = Stock.GetSuspendStockSet(current_date,0,WindPy)
+	suspend0 = Stock.GetSuspendStockSet(current_date,1,WindPy)#Stock.GetSuspendStockSet(current_date,0,WindPy)
 	sql = "Replace into stocks_code(windcode,name,status,starter,zhongzheng500,hushen300,date) values(%(code)s,%(name)s,%(status)s,%(starter)s,%(zhongzheng500)s,%(hushen300)s,%(date)s)"
 	print "stocks basic filter and limit to free-------------------------------"
 	wl = Stock.GetStocksBasic(windcode_dict,Connect)
@@ -690,15 +690,16 @@ def DaysFundIndex(Connect,WindPy):
 	
 		wd_mainforce  [da['code'] ] = { 'name':da['name'],'date': da['date'],'status': 0,'stars' : 6,} 
 	print num
-	Require_Num = 1
+	Require_Num = 3
 	# ktype_list= [2,4,5,6,7,8]
-	ktype_list= [7]	
+	ktype_list= [7,8]	
 	for ktype in ktype_list :		
 		tablename = Stock.GetTableName(MarketType,ktype)
 		for windcode in   wd_mainforce  :
 			indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,Connect)
 			wd_mainforce[windcode]['ta'+str(ktype)] = indicator
-			times = [wd_mainforce[windcode]['ta7'][index]['date'] for index in range(len(wd_mainforce[windcode]['ta7']))][-Require_Num:]
+			if ktype == 7 :
+				times = [wd_mainforce[windcode]['ta7'][index]['date'] for index in range(len(wd_mainforce[windcode]['ta7']))][-Require_Num:]
 
 				
 	
@@ -708,7 +709,7 @@ def DaysFundIndex(Connect,WindPy):
 	# print board8	
 
 	stock_mainforce7 = Stock.StocksData_New(wd_mainforce,7,Connect,WindPy)
-	# stock_mainforce8 = Stock.StocksData_New(wd_mainforce,8,Connect,WindPy)
+	stock_mainforce8 = Stock.StocksData_New(wd_mainforce,8,Connect,WindPy)
 	suspend5 = Stock.GetSuspendStockSet(current_date,-5,WindPy)
 	# do calculator
 
@@ -717,15 +718,22 @@ def DaysFundIndex(Connect,WindPy):
 	stocks_tablename = "stocks_sr"	
 	
 	windcode_list7= []
-	for stock in stock_mainforce7:		
+	windcode_list8= []
+	for stock in stock_mainforce7:
+		if stock['windcode'] in suspend5:
+			continue	
 		windcode_list7.append(stock)	
 
-
+	for stock in stock_mainforce8:
+		if stock['windcode'] in suspend5:
+			continue
+		windcode_list8.append(stock)		
+	
 	
 
 	
 	 
-	rt = Stock.StocksFundIndexCalc(wd_mainforce,7,windcode_list7,Require_Num=Require_Num)
+	rt = Stock.StocksFundIndexCalc(wd_mainforce,7,windcode_list7,windcode_list8,Require_Num=Require_Num)
 	FundIndexNumList = [ rt[x]['num'] for x in range(len(rt))]
 	# IndexSave(FundIndexNumList,'FundIndex',times,Connect) 
 

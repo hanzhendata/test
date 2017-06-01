@@ -206,6 +206,17 @@ def StocksDaysHistoryUpdate(Windcode_Dict,ktype,Connect,WindPy,base_days= 365*30
 				wd[temp] += ";" + windcode
 			else:
 				wd[temp] =  windcode
+		else:
+			select_ipo = "select content from stocks_basic_other where windcode=%(code)s and typename='IPO_DATE' order by date desc limit 1"
+			cursor.execute(select_ipo,select_data)
+			if cursor.rowcount>0 :
+				temp = datetime.strptime(cursor.fetchone()[0], "%Y-%m-%d %H:%M:%S.%f" )
+				if temp in wd:
+					wd[temp] += ";" + windcode
+				else:
+					wd[temp] =  windcode
+
+
 
 		 	
 	
@@ -225,18 +236,21 @@ def StocksDaysHistoryUpdate(Windcode_Dict,ktype,Connect,WindPy,base_days= 365*30
 			continue
 		if (endtime-starttime).days==SingleTime.days and (endtime-starttime).seconds <= 19*3600:
 			continue
-		starttime += SingleTime
+		# starttime += SingleTime
 		# print wd[wdate]
 		for mt in [ "open","high","low","close","volume","pct_chg","chg","mkt_cap_ard"]:
+			if mt=="mkt_cap_ard" :
+				para ="unit=1;" + para
 			wsdata = WindPy.wsd( wd[wdate] , mt,starttime,endtime,para )
 			if not CheckWindData(wsdata):		
 				continue		
 			ws.append( wsdata.Data )
-
+			if ktype==8 and wd[wdate]=='002372.SZ' :
+				print len(wsdata.Times)
 			times = wsdata.Times
 			codes = wsdata.Codes
 			del wsdata	
-		# print wsdata
+		
 		if len(ws)==0 :
 			continue
 		wslength = len(times)
@@ -268,11 +282,12 @@ def StocksDaysHistoryUpdate(Windcode_Dict,ktype,Connect,WindPy,base_days= 365*30
 			
 				f.write(temp)
 		else:
+			wsl = wslength			
 			if ws[0][0][-1] == 0 and ws[1][0][-1] == 0 and ws[2][0][-1] == 0 and ws[0][-1][-1] == 0 and ws[1][-1][-1] == 0 and ws[2][-1][-1] == 0:
 				wsl = wslength -1
-			else:
-				wsl = wslength
-
+			
+			
+			print  wdate, wsl,wslength,wd[wdate]
 			for cindex  in range(len(codes)):
 				windcode = codes[cindex]			
 				for index in range(0,wsl): 
@@ -2017,8 +2032,12 @@ def GetSuspendStockSet(EndDate,daysoffset,WindPy):
 	Suspend_Stocks= set()
 	wsdata = WindPy.tdaysoffset(daysoffset, EndDate, "")
 	if not CheckWindData(wsdata) :
-		return Suspend_Stocks
-	starttime = wsdata.Data[0][0]
+		return Suspend_Stocks	
+	if daysoffset>0:
+		starttime = EndDate
+		EndDate = wsdata.Data[0][0]
+	else:
+		starttime = wsdata.Data[0][0]
 	wsdata=WindPy.wset("tradesuspend","startdate="+starttime.strftime("%Y-%m-%d")+";enddate="+EndDate.strftime("%Y-%m-%d"))
 	if  CheckWindData(wsdata):		
 		for index in range(0,len(wsdata.Data[0])):
@@ -2174,13 +2193,14 @@ def StocksFundIndexCalc(Windcode_Dict,ktype,StocksList7,StocksList8,Default=True
 			dcp = -1
 			cd0=board[ds][-1-ri]['date' ]
 			stock8 = [ StocksList8[x]  for x in range(len(StocksList8)) if StocksList8[x]['windcode']==windcode] [0]
-			while(cd0<dateplus1[ dcp] and dcp>=-len(stock8['pb1'][dcp])):
+			while(cd0<dateplus1[ dcp] and dcp>=-len(stock8['pb1'])):
 				dcp -=1
+			# print windcode,cd0, dateplus1[dcp],stock8['diff'][dcp],stock8['pb1'][dcp],stock8['pb2'][dcp],stock8['pb6'][dcp],'\n'
 			if cd0 >= dateplus1[ dcp ] :
 				if stock8['diff'][dcp]>0 and stock8['pb1'][dcp]>stock8['pb6'][dcp] and stock8['pb2'][dcp]>stock8['pb6'][dcp] :
 					week_windcode.append(windcode)
 		rt[ri]['windcode'] = week_windcode[:]
-		# print rt[ri]
+		print rt[ri]
 	gc.collect()
 	return rt
 
