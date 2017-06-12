@@ -397,3 +397,4 @@ InterfaceError: 2003: Can't connect to MySQL server on '10.15.6.108:3306' (10060
 2017-06-12 22:38:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/002648.SZ?callback=jsonpcallback&_=1497278294587 (61.149.238.5) 4.00ms
 2017-06-12 22:38:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=002648.SZ (123.57.150.251) 4.00ms
 2017-06-12 22:38:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=002648.SZ (123.57.150.251) 2.00ms
+2017-06-12 23:00:00 base.py[line:123] INFO Running job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-06-13 23:00:00 CST)" (scheduled at 2017-06-12 23:00:00+08:00)
