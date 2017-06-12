@@ -392,3 +392,8 @@ InterfaceError: 2003: Can't connect to MySQL server on '10.15.6.108:3306' (10060
 2017-06-12 22:23:19 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=300255.SZ (123.57.150.251) 4.00ms
 2017-06-12 22:23:19 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=300255.SZ (123.57.150.251) 2.00ms
 2017-06-12 22:28:21 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1497277701723 (61.149.238.5) 2.00ms
+2017-06-12 22:37:57 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1497278277027 (61.149.238.5) 2.00ms
+2017-06-12 22:38:03 wsgi.py[line:355] INFO 200 GET /api/v1.0/calcdate/?callback=jsonpcallback&_=1497278283865 (61.149.238.5) 1.00ms
+2017-06-12 22:38:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksbasic/002648.SZ?callback=jsonpcallback&_=1497278294587 (61.149.238.5) 4.00ms
+2017-06-12 22:38:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=30&windcode=002648.SZ (123.57.150.251) 4.00ms
+2017-06-12 22:38:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stockslabel/?windcode=002648.SZ (123.57.150.251) 2.00ms
