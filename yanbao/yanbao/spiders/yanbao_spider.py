@@ -22,5 +22,5 @@ class YanbaoSpider(scrapy.Spider):
 			yield scrapy.Request(url, callback=self.parse2)
 
 	def parse2(self, response):
-		
+		pmain = response.css("div.p_main").extract_first()
 		pass

@@ -237,7 +237,7 @@ from WindPy import w
 import numpy 
 import math
 # import time
-import Stock,FourIndicator
+import Stock,FourIndicator,Slice
 cnx = mysql.connector.connect(**Config.config)
 
 
@@ -305,7 +305,7 @@ def Warning_Init():
 	cnx.commit()	           
 	w.stop()
 
-def Slice():
+def Slice0():
 	cursor = cnx.cursor()
 	select_cursor = cnx.cursor()
 	tablename = "stocks_history_minutes"
@@ -424,7 +424,7 @@ def Slice():
 		cursor.execute("COMMIT;")
 	cursor.close()
 
-def Slice(windcode,begindate,enddate,ktype_list):
+def Slice0(windcode,begindate,enddate,ktype_list):
 	cursor = cnx.cursor()
 	select_cursor = cnx.cursor()
 	tablename = "stocks_history_minutes"
@@ -719,13 +719,102 @@ def TechAnanysis(windcode,ktype,datetime):
             print 'fast k d j',tech['fast_k'][index],tech['fast_d'][index], tech['fast_j'][index]
             print 'slow k d j',tech['slow_k'][index],tech['slow_d'][index], tech['slow_j'][index]
             print 'pb 1 2 6 ',tech['pb1'][index],tech['pb2'][index], tech['pb6'][index]
+
+
+def BreakVolume():
+    cursor = cnx.cursor()
+    cursor.execute("select windcode,name,stype,date from stocks_sr where stype=3 order by date desc")
+    windcode_list = {}
+    for windcode,sname,stype,sdate in cursor:
+        if windcode_list.get(sdate) is None:
+            windcode_list[sdate] = [ windcode ]
+        else :
+            windcode_list[sdate].append( windcode )
+    current_date = datetime.now()
+    rtn = {}
+    for sdate in windcode_list:
+        ktype = 8 
+        if ktype > 6:
+            tablename = 'stocks_history_days'
+        else:       
+            tablename = 'stocks_history_minutes'
+                 
+        ktypestr = str(ktype)
+        for windcode in windcode_list[sdate] :
+            indicator = Stock.StocksOHLC_N(windcode,tablename,ktype,cnx,limit=2000)       
+            if ktype==8:
+                wsd=w.wsd(windcode,"open,high,low,close",current_date,current_date,"Period=W;PriceAdj=F")
+                print windcode,wsd
+                if wsd.ErrorCode==0 and indicator[-1]['date'] < wsd.Times[0] :
+                    indicator.append({
+                        'date':wsd.Times[0],
+                        'open':wsd.Data[0][0],
+                        'high':wsd.Data[1][0],
+                        'low' :wsd.Data[2][0],
+                        'close':wsd.Data[3][0],
+                        })
+            tech = Stock.StocksTech(indicator)
+            if tech['diff'][-1] >0 and tech['pb1'][-1] >tech['pb6'][-1] and tech['pb2'][-1]> tech['pb6'][-1] :
+                if rtn.get(sdate) is None :
+                    rtn[sdate] = [ windcode  ] 
+                else:
+                    rtn[sdate].append( windcode  )
+    print rtn
+    remains=[]
+    sql = "select id,stype,ktype,date,windcode,name,pct_chg,cap from stocks_sr where stype=3 and date=%(sdate)s and windcode= %(code)s"
+    for sdate in rtn:
+        for windcode in rtn[sdate]:
+            cursor.execute(sql,{'sdate':sdate,'code':windcode})
+            for sid,stype,ktype,sdate,windcode,name,pct_chg,cap in cursor:
+                remains.append({
+                    'id':sid,
+                    'stype':stype,
+                    'ktype':ktype,
+                    'date':sdate,
+                    'windcode': windcode,
+                    'name':name,
+                    'pct_chg':pct_chg,
+                    'cap':float(cap),
+                    }
+                )
+    cursor.execute("delete from stocks_sr where stype=3")
+    # sql = "insert into stocks_sr(id,stype,ktype,date,windcode,name,pct_chg,cap) valuse(%(id)s,%(stype)s,%(ktype)s,%(sdate)s,%(windcode)s,%(name)s,%(pct_chg)s,%(scap)s)  "
+    sql = "Replace into stocks_sr(id,stype,ktype,date,windcode,name,pct_chg,cap) values(%(id)s,%(stype)s,%(ktype)s,%(date)s,%(windcode)s,%(name)s,%(pct_chg)s,%(cap)s)"
+    for rem in remains:
+        cursor.execute(sql,rem)
+    cnx.commit()
+    cursor.close()
+                
+def Slice1():
+    cursor = cnx.cursor()
+    cursor.execute("select windcode,name,date from stocks_code order by date desc")
+    windcode_list = {}
+    for windcode,sname,sdate in cursor:
+        if windcode_list.get(sdate) is None:
+            windcode_list[sdate] = [ windcode ]
+        else :
+            windcode_list[sdate].append( windcode )
+    ktype_list = [2,4,5,6]
+
+    for sdate in windcode_list:
+        tablename = 'stocks_history_minutes'
+        
+        for windcode in windcode_list[sdate] :
+            Slice.SliceMinuteUpdate_New(windcode,ktype_list,cnx)
+            
+
+    cnx.commit()
+    cursor.close()
+          
 # windcode_dict  = {}
 # Slice()
 # UpdateZero('600895.SH')
 # Update_All()
 # Warning_Init()
 # TechAnanysis(['603989.SH','600463.SH','000333.SZ','000504.SZ','300288.SZ'],datetime.now())
-Tech8Ananysis([ '000062.SZ','300041.SZ','600475.SH'],datetime.now()-timedelta(days=0))
+Tech8Ananysis([ '603199.SH'],datetime.now()-timedelta(days=0))
+# BreakVolume()
+# Slice1()
 # Tech8Ananysis([ '002573.SZ','000888.SZ','300023.SZ','300288.SZ','300418.SZ','300307.SZ','600803.SH','603977.SH','603199.SH'],datetime.now()-timedelta(days=0))
 # TechAnanysis('002365.SZ',6,datetime.now())
 # current_date = datetime.now()	

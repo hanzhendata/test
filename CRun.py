@@ -753,6 +753,15 @@ def DaysFundIndex(Connect,WindPy):
 	
 	del windcode_list7
 
+def DataCheck(Connect,WindPy):
+	if Config.CheckDateValid(current_date,WindPy) ==1 :
+	    TradeDayFlag = True
+	else:
+	    TradeDayFlag = False
+	    print 'CRun Data Check not TradeDay'	
+	    return	
+	
+		
 
 import cProfile
 if __name__ == '__main__':

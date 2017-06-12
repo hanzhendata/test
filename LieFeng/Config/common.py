@@ -770,6 +770,12 @@ def WarningMessage_Delete(builddate):
     Connector.commit()
     cursor.close()
 
+def SendErrorMessage(ctime,level,content):
+	url = 'http://www.hanzhendata.com/ihanzhendata/user/wxmessage3'
+	url += "?time="+ctime.strftime("%Y-%m-%d %H:%M:%S")+"&level="+str(level)+"&context=" + content
+	print url
+	response = requests.request("GET", url)
+	print  response.status_code 
 
 
 def Get5MintueNumber(current_time):	

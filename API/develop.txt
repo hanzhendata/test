@@ -1,188 +1,41 @@
-2017-05-27 16:41:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 16:41:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 16:41:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 16:41:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 16:41:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 16:41:57 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-05-27 16:41:57 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-05-27 16:41:57 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-05-27 16:41:57 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-05-27 16:41:57 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-05-27 16:41:57 base.py[line:158] INFO Scheduler started
-2017-05-27 17:07:16 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:07:16 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:07:16 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:07:16 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:07:16 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:07:16 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-05-27 17:07:16 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-05-27 17:07:16 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-05-27 17:07:16 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-05-27 17:07:16 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-05-27 17:07:16 base.py[line:158] INFO Scheduler started
-2017-05-27 17:17:35 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:17:35 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:17:35 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:17:35 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:17:35 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-27 17:17:35 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-05-27 17:17:35 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-05-27 17:17:35 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-05-27 17:17:35 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-05-27 17:17:35 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-05-27 17:17:35 base.py[line:158] INFO Scheduler started
-2017-05-30 10:19:22 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 10:19:22 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 10:19:22 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 10:19:22 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 10:19:22 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 10:19:22 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-05-30 10:19:22 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-05-30 10:19:22 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-05-30 10:19:22 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-05-30 10:19:22 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-05-30 10:19:22 base.py[line:158] INFO Scheduler started
-2017-05-30 11:16:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 11:16:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 11:16:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 11:16:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 11:16:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 11:16:33 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-05-30 11:16:33 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-05-30 11:16:33 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-05-30 11:16:33 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-05-30 11:16:33 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-05-30 11:16:33 base.py[line:158] INFO Scheduler started
-2017-05-30 23:13:08 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 23:13:08 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 23:13:08 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 23:13:08 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 23:13:08 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-05-30 23:13:08 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-05-30 23:13:08 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-05-30 23:13:08 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-05-30 23:13:08 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-05-30 23:13:08 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-05-30 23:13:08 base.py[line:158] INFO Scheduler started
-2017-05-31 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-31 22:00:00 CST)" (scheduled at 2017-05-31 05:00:00+08:00)
-2017-05-31 05:09:07 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-05-31 22:00:00 CST)" executed successfully
-2017-05-31 06:50:00 base.py[line:123] INFO Running job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-05-31 06:50:00 CST)" (scheduled at 2017-05-31 06:50:00+08:00)
-2017-05-31 06:50:00 base.py[line:204] INFO Paused scheduler job processing
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-05-31 06:50:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
-2017-05-31 06:50:00 base.py[line:213] INFO Resumed scheduler job processing
-2017-05-31 06:50:00 base.py[line:135] INFO Job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-06-01 06:50:00 CST)" executed successfully
-2017-05-31 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-05-31 09:31:00 CST)" (scheduled at 2017-05-31 09:31:00+08:00)
-2017-05-31 09:32:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-31 09:32:30 CST)" (scheduled at 2017-05-31 09:32:30+08:00)
-2017-05-31 09:32:30 base.py[line:619] INFO Removed job 101
-2017-05-31 09:33:27 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-31 09:32:30 CST)" executed successfully
-2017-05-31 09:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:35:20 CST)" (scheduled at 2017-05-31 09:35:20+08:00)
-2017-05-31 09:37:19 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:40:20 CST)" executed successfully
-2017-05-31 09:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:40:20 CST)" (scheduled at 2017-05-31 09:40:20+08:00)
-2017-05-31 09:42:19 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:45:20 CST)" executed successfully
-2017-05-31 09:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:45:20 CST)" (scheduled at 2017-05-31 09:45:20+08:00)
-2017-05-31 09:47:19 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:50:20 CST)" executed successfully
-2017-05-31 09:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:50:20 CST)" (scheduled at 2017-05-31 09:50:20+08:00)
-2017-05-31 09:52:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:55:20 CST)" executed successfully
-2017-05-31 09:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 09:55:20 CST)" (scheduled at 2017-05-31 09:55:20+08:00)
-2017-05-31 09:57:17 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:00:20 CST)" executed successfully
-2017-05-31 10:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:00:20 CST)" (scheduled at 2017-05-31 10:00:20+08:00)
-2017-05-31 10:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 10:30:20 CST)" (scheduled at 2017-05-31 10:00:20+08:00)
-2017-05-31 10:01:44 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 10:30:20 CST)" executed successfully
-2017-05-31 10:02:30 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:05:20 CST)" executed successfully
-2017-05-31 10:04:52 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-06-01 09:31:00 CST)" executed successfully
-2017-05-31 10:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:10:20 CST)" (scheduled at 2017-05-31 10:05:20+08:00)
-2017-05-31 10:06:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:10:20 CST)" executed successfully
-2017-05-31 10:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:15:20 CST)" (scheduled at 2017-05-31 10:10:20+08:00)
-2017-05-31 10:11:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:15:20 CST)" executed successfully
-2017-05-31 10:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:20:20 CST)" (scheduled at 2017-05-31 10:15:20+08:00)
-2017-05-31 10:16:29 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:20:20 CST)" executed successfully
-2017-05-31 10:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:25:20 CST)" (scheduled at 2017-05-31 10:20:20+08:00)
-2017-05-31 10:21:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:25:20 CST)" executed successfully
-2017-05-31 10:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:30:20 CST)" (scheduled at 2017-05-31 10:25:20+08:00)
-2017-05-31 10:26:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:30:20 CST)" executed successfully
-2017-05-31 10:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:35:20 CST)" (scheduled at 2017-05-31 10:30:20+08:00)
-2017-05-31 10:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 11:00:20 CST)" (scheduled at 2017-05-31 10:30:20+08:00)
-2017-05-31 10:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-31 11:30:20 CST)" (scheduled at 2017-05-31 10:30:20+08:00)
-2017-05-31 10:31:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:35:20 CST)" executed successfully
-2017-05-31 10:32:40 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-31 11:30:20 CST)" executed successfully
-2017-05-31 10:33:23 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 11:00:20 CST)" executed successfully
-2017-05-31 10:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:40:20 CST)" (scheduled at 2017-05-31 10:35:20+08:00)
-2017-05-31 10:36:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:40:20 CST)" executed successfully
-2017-05-31 10:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:45:20 CST)" (scheduled at 2017-05-31 10:40:20+08:00)
-2017-05-31 10:41:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:45:20 CST)" executed successfully
-2017-05-31 10:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:50:20 CST)" (scheduled at 2017-05-31 10:45:20+08:00)
-2017-05-31 10:46:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:50:20 CST)" executed successfully
-2017-05-31 10:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:55:20 CST)" (scheduled at 2017-05-31 10:50:20+08:00)
-2017-05-31 10:51:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 10:55:20 CST)" executed successfully
-2017-05-31 10:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:00:20 CST)" (scheduled at 2017-05-31 10:55:20+08:00)
-2017-05-31 10:56:22 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:00:20 CST)" executed successfully
-2017-05-31 11:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:05:20 CST)" (scheduled at 2017-05-31 11:00:20+08:00)
-2017-05-31 11:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 11:30:20 CST)" (scheduled at 2017-05-31 11:00:20+08:00)
-2017-05-31 11:01:20 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:05:20 CST)" executed successfully
-2017-05-31 11:02:19 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 11:30:20 CST)" executed successfully
-2017-05-31 11:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:10:20 CST)" (scheduled at 2017-05-31 11:05:20+08:00)
-2017-05-31 11:06:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:10:20 CST)" executed successfully
-2017-05-31 11:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:15:20 CST)" (scheduled at 2017-05-31 11:10:20+08:00)
-2017-05-31 11:11:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:15:20 CST)" executed successfully
-2017-05-31 11:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:20:20 CST)" (scheduled at 2017-05-31 11:15:20+08:00)
-2017-05-31 11:16:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:20:20 CST)" executed successfully
-2017-05-31 11:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:25:20 CST)" (scheduled at 2017-05-31 11:20:20+08:00)
-2017-05-31 11:21:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:25:20 CST)" executed successfully
-2017-05-31 11:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:30:20 CST)" (scheduled at 2017-05-31 11:25:20+08:00)
-2017-05-31 11:26:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:30:20 CST)" executed successfully
-2017-05-31 11:30:20 base.py[line:619] INFO Removed job 105
-2017-05-31 11:30:20 base.py[line:619] INFO Removed job 130
-2017-05-31 11:30:20 base.py[line:619] INFO Removed job 160
-2017-05-31 11:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:30:20 CST)" (scheduled at 2017-05-31 11:30:20+08:00)
-2017-05-31 11:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 11:30:20 CST)" (scheduled at 2017-05-31 11:30:20+08:00)
-2017-05-31 11:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-31 11:30:20 CST)" (scheduled at 2017-05-31 11:30:20+08:00)
-2017-05-31 11:31:21 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 11:30:20 CST)" executed successfully
-2017-05-31 11:35:01 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-31 11:30:20 CST)" executed successfully
-2017-05-31 11:35:01 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 11:30:20 CST)" executed successfully
-2017-05-31 13:01:30 base.py[line:619] INFO Removed job 201
-2017-05-31 13:01:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-31 13:01:30 CST)" (scheduled at 2017-05-31 13:01:30+08:00)
-2017-05-31 13:02:31 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-05-31 13:01:30 CST)" executed successfully
-2017-05-31 13:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:10:20 CST)" (scheduled at 2017-05-31 13:05:20+08:00)
-2017-05-31 13:06:43 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:10:20 CST)" executed successfully
-2017-05-31 13:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:15:20 CST)" (scheduled at 2017-05-31 13:10:20+08:00)
-2017-05-31 13:11:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:15:20 CST)" executed successfully
-2017-05-31 13:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:20:20 CST)" (scheduled at 2017-05-31 13:15:20+08:00)
-2017-05-31 13:16:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:20:20 CST)" executed successfully
-2017-05-31 13:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:25:20 CST)" (scheduled at 2017-05-31 13:20:20+08:00)
-2017-05-31 13:21:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:25:20 CST)" executed successfully
-2017-05-31 13:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:30:20 CST)" (scheduled at 2017-05-31 13:25:20+08:00)
-2017-05-31 13:26:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:30:20 CST)" executed successfully
-2017-05-31 13:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:35:20 CST)" (scheduled at 2017-05-31 13:30:20+08:00)
-2017-05-31 13:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 14:00:20 CST)" (scheduled at 2017-05-31 13:30:20+08:00)
-2017-05-31 13:31:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:35:20 CST)" executed successfully
-2017-05-31 13:32:35 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 14:00:20 CST)" executed successfully
-2017-05-31 13:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:40:20 CST)" (scheduled at 2017-05-31 13:35:20+08:00)
-2017-05-31 13:36:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:40:20 CST)" executed successfully
-2017-05-31 13:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:45:20 CST)" (scheduled at 2017-05-31 13:40:20+08:00)
-2017-05-31 13:41:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:45:20 CST)" executed successfully
-2017-05-31 13:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:50:20 CST)" (scheduled at 2017-05-31 13:45:20+08:00)
-2017-05-31 13:46:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:50:20 CST)" executed successfully
-2017-05-31 13:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:55:20 CST)" (scheduled at 2017-05-31 13:50:20+08:00)
-2017-05-31 13:51:21 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 13:55:20 CST)" executed successfully
-2017-05-31 13:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:00:20 CST)" (scheduled at 2017-05-31 13:55:20+08:00)
-2017-05-31 13:56:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:00:20 CST)" executed successfully
-2017-05-31 14:00:20 base.py[line:619] INFO Removed job 260
-2017-05-31 14:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:05:20 CST)" (scheduled at 2017-05-31 14:00:20+08:00)
-2017-05-31 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 14:30:20 CST)" (scheduled at 2017-05-31 14:00:20+08:00)
-2017-05-31 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-31 14:00:20 CST)" (scheduled at 2017-05-31 14:00:20+08:00)
-2017-05-31 14:00:41 base.py[line:131] ERROR Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-05-31 14:00:20 CST)" raised an exception
+2017-06-11 23:01:31 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-06-11 23:01:31 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-06-11 23:01:31 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-06-11 23:01:31 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-06-11 23:01:31 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2017-06-11 23:01:31 base.py[line:865] INFO Added job "Init" to job store "default"
+2017-06-11 23:01:31 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
+2017-06-11 23:01:31 base.py[line:865] INFO Added job "Sche_Init_New" to job store "default"
+2017-06-11 23:01:31 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
+2017-06-11 23:01:31 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
+2017-06-11 23:01:31 base.py[line:158] INFO Scheduler started
+2017-06-12 00:03:52 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=10&windcode=600007.sh&type=5 (::1) 4.00ms
+2017-06-12 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-12 22:00:00 CST)" (scheduled at 2017-06-12 05:00:00+08:00)
+2017-06-12 05:08:18 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-12 22:00:00 CST)" executed successfully
+2017-06-12 06:50:00 base.py[line:123] INFO Running job "Sche_Init_New (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-06-12 06:50:00 CST)" (scheduled at 2017-06-12 06:50:00+08:00)
+2017-06-12 06:50:00 base.py[line:865] INFO Added job "WarningMessage_Minute" to job store "default"
+2017-06-12 06:50:00 base.py[line:865] INFO Added job "WarningMessage_Minute" to job store "default"
+2017-06-12 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-06-12 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
+2017-06-12 06:50:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-06-12 06:50:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
+2017-06-12 06:50:00 base.py[line:135] INFO Job "Sche_Init_New (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-06-13 06:50:00 CST)" executed successfully
+2017-06-12 09:31:00 base.py[line:123] INFO Running job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-06-12 09:31:00 CST)" (scheduled at 2017-06-12 09:31:00+08:00)
+2017-06-12 09:32:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-06-12 09:32:30 CST)" (scheduled at 2017-06-12 09:32:30+08:00)
+2017-06-12 09:32:30 base.py[line:619] INFO Removed job 101
+2017-06-12 09:33:25 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-06-12 09:32:30 CST)" executed successfully
+2017-06-12 09:35:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:35:20 CST)" (scheduled at 2017-06-12 09:35:20+08:00)
+2017-06-12 09:38:00 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:40:20 CST)" executed successfully
+2017-06-12 09:40:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:40:20 CST)" (scheduled at 2017-06-12 09:40:20+08:00)
+2017-06-12 09:42:15 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:45:20 CST)" executed successfully
+2017-06-12 09:45:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:45:20 CST)" (scheduled at 2017-06-12 09:45:20+08:00)
+2017-06-12 09:45:41 base.py[line:131] ERROR Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:50:20 CST)" raised an exception
 Traceback (most recent call last):
   File "E:\Python_LieFeng\API\flask\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
     retval = job.func(*job.args, **job.kwargs)
-  File "develop.py", line 2332, in WarningMessage
+  File "develop.py", line 2689, in WarningMessage_Minute
+    WarningMessage2()
+  File "develop.py", line 2190, in WarningMessage2
     Connector = mysql.connector.connect(**Config.db_config)
   File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\__init__.py", line 179, in connect
     return MySQLConnection(*args, **kwargs)
@@ -195,238 +48,99 @@ Traceback (most recent call last):
   File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\network.py", line 512, in open_connection
     errno=2003, values=(self.get_address(), _strioerror(err)))
 InterfaceError: 2003: Can't connect to MySQL server on '10.15.6.108:3306' (10060 )
-2017-05-31 14:01:34 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:05:20 CST)" executed successfully
-2017-05-31 14:02:52 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 14:30:20 CST)" executed successfully
-2017-05-31 14:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:10:20 CST)" (scheduled at 2017-05-31 14:05:20+08:00)
-2017-05-31 14:06:25 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:10:20 CST)" executed successfully
-2017-05-31 14:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:15:20 CST)" (scheduled at 2017-05-31 14:10:20+08:00)
-2017-05-31 14:11:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:15:20 CST)" executed successfully
-2017-05-31 14:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:20:20 CST)" (scheduled at 2017-05-31 14:15:20+08:00)
-2017-05-31 14:16:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:20:20 CST)" executed successfully
-2017-05-31 14:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:25:20 CST)" (scheduled at 2017-05-31 14:20:20+08:00)
-2017-05-31 14:20:40 base.py[line:131] ERROR Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:25:20 CST)" raised an exception
-Traceback (most recent call last):
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
-    retval = job.func(*job.args, **job.kwargs)
-  File "develop.py", line 2144, in WarningMessage2
-    Connector = mysql.connector.connect(**Config.db_config)
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\__init__.py", line 179, in connect
-    return MySQLConnection(*args, **kwargs)
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\connection.py", line 95, in __init__
-    self.connect(**kwargs)
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\abstracts.py", line 716, in connect
-    self._open_connection()
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\connection.py", line 210, in _open_connection
-    self._ssl)
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\connection.py", line 144, in _do_auth
-    self._auth_switch_request(username, password)
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\connection.py", line 157, in _auth_switch_request
-    packet = self._socket.recv()
-  File "E:\Python_LieFeng\API\flask\lib\site-packages\mysql\connector\network.py", line 243, in recv_plain
-    raise errors.InterfaceError(errno=2013)
-InterfaceError: 2013: Lost connection to MySQL server during query
-2017-05-31 14:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:30:20 CST)" (scheduled at 2017-05-31 14:25:20+08:00)
-2017-05-31 14:26:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:30:20 CST)" executed successfully
-2017-05-31 14:30:20 base.py[line:619] INFO Removed job 230
-2017-05-31 14:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:35:20 CST)" (scheduled at 2017-05-31 14:30:20+08:00)
-2017-05-31 14:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 14:30:20 CST)" (scheduled at 2017-05-31 14:30:20+08:00)
-2017-05-31 14:31:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:35:20 CST)" executed successfully
-2017-05-31 14:33:47 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-05-31 14:30:20 CST)" executed successfully
-2017-05-31 14:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:40:20 CST)" (scheduled at 2017-05-31 14:35:20+08:00)
-2017-05-31 14:36:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:40:20 CST)" executed successfully
-2017-05-31 14:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:45:20 CST)" (scheduled at 2017-05-31 14:40:20+08:00)
-2017-05-31 14:41:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:45:20 CST)" executed successfully
-2017-05-31 14:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:50:20 CST)" (scheduled at 2017-05-31 14:45:20+08:00)
-2017-05-31 14:46:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:50:20 CST)" executed successfully
-2017-05-31 14:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:55:20 CST)" (scheduled at 2017-05-31 14:50:20+08:00)
-2017-05-31 14:51:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:55:20 CST)" executed successfully
-2017-05-31 14:55:20 base.py[line:619] INFO Removed job 205
-2017-05-31 14:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:55:20 CST)" (scheduled at 2017-05-31 14:55:20+08:00)
-2017-05-31 14:56:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-05-31 14:55:20 CST)" executed successfully
-2017-05-31 15:05:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-06-01 15:05:00 CST)" (scheduled at 2017-05-31 15:05:00+08:00)
-2017-05-31 15:14:52 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-06-01 15:05:00 CST)" executed successfully
-2017-05-31 21:30:01 base.py[line:120] WARNING Run time of job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-06-01 21:30:00 CST)" was missed by 0:00:01.578000
-2017-05-31 22:00:01 base.py[line:120] WARNING Run time of job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-01 05:00:00 CST)" was missed by 0:00:01.303000
-2017-05-31 23:00:00 base.py[line:123] INFO Running job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-06-01 23:00:00 CST)" (scheduled at 2017-05-31 23:00:00+08:00)
-2017-05-31 23:27:24 base.py[line:135] INFO Job "WM_Rebulid (trigger: cron[day_of_week='0-6', hour='23'], next run at: 2017-06-01 23:00:00 CST)" executed successfully
-2017-06-01 05:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-01 22:00:00 CST)" (scheduled at 2017-06-01 05:00:00+08:00)
-2017-06-01 05:09:29 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-01 22:00:00 CST)" executed successfully
-2017-06-01 06:50:00 base.py[line:123] INFO Running job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-06-02 06:50:00 CST)" (scheduled at 2017-06-01 06:50:00+08:00)
-2017-06-01 06:50:00 base.py[line:204] INFO Paused scheduler job processing
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 06:50:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
-2017-06-01 06:50:00 base.py[line:213] INFO Resumed scheduler job processing
-2017-06-01 06:50:00 base.py[line:135] INFO Job "Sche_Init (trigger: cron[day_of_week='0-6', hour='6', minute='50'], next run at: 2017-06-02 06:50:00 CST)" executed successfully
-2017-06-01 07:29:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:29:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:29:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:29:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:29:33 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:29:33 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-06-01 07:29:33 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-06-01 07:29:33 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-06-01 07:29:33 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-06-01 07:29:33 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-06-01 07:29:33 base.py[line:158] INFO Scheduler started
-2017-06-01 07:43:00 base.py[line:204] INFO Paused scheduler job processing
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 07:43:00 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
-2017-06-01 07:43:00 base.py[line:213] INFO Resumed scheduler job processing
-2017-06-01 07:51:39 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:51:39 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:51:39 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:51:39 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:51:39 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 07:51:39 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-06-01 07:51:39 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-06-01 07:51:39 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-06-01 07:51:39 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-06-01 07:51:39 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-06-01 07:51:39 base.py[line:158] INFO Scheduler started
-2017-06-01 08:01:43 base.py[line:204] INFO Paused scheduler job processing
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 08:01:43 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
-2017-06-01 08:01:43 base.py[line:213] INFO Resumed scheduler job processing
-2017-06-01 10:05:52 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:05:52 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:05:52 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:05:52 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:05:52 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:05:52 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-06-01 10:05:52 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-06-01 10:05:52 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-06-01 10:05:52 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-06-01 10:05:52 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-06-01 10:05:52 base.py[line:158] INFO Scheduler started
-2017-06-01 10:18:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:18:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:18:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:18:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:18:57 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 10:18:57 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-06-01 10:18:57 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-06-01 10:18:57 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-06-01 10:18:57 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-06-01 10:18:57 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-06-01 10:18:57 base.py[line:158] INFO Scheduler started
-2017-06-01 11:31:48 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:31:48 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:31:48 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:31:48 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:31:48 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:31:48 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-06-01 11:31:48 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-06-01 11:31:48 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-06-01 11:31:48 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-06-01 11:31:48 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-06-01 11:31:48 base.py[line:158] INFO Scheduler started
-2017-06-01 11:52:03 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:52:03 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:52:03 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:52:03 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:52:03 base.py[line:431] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2017-06-01 11:52:03 base.py[line:865] INFO Added job "Init" to job store "default"
-2017-06-01 11:52:03 base.py[line:865] INFO Added job "WarningMessage_Week" to job store "default"
-2017-06-01 11:52:03 base.py[line:865] INFO Added job "Sche_Init" to job store "default"
-2017-06-01 11:52:03 base.py[line:865] INFO Added job "OHLC_Update" to job store "default"
-2017-06-01 11:52:03 base.py[line:865] INFO Added job "WM_Rebulid" to job store "default"
-2017-06-01 11:52:03 base.py[line:158] INFO Scheduler started
-2017-06-01 12:29:19 base.py[line:204] INFO Paused scheduler job processing
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessage" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessage2" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WMOneMinute" to job store "default"
-2017-06-01 12:29:19 base.py[line:865] INFO Added job "WarningMessageAll" to job store "default"
-2017-06-01 12:29:19 base.py[line:213] INFO Resumed scheduler job processing
-2017-06-01 13:01:30 base.py[line:619] INFO Removed job 201
-2017-06-01 13:01:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-06-01 13:01:30 CST)" (scheduled at 2017-06-01 13:01:30+08:00)
-2017-06-01 13:02:30 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-06-01 13:01:30 CST)" executed successfully
-2017-06-01 13:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:05:20 CST)" (scheduled at 2017-06-01 13:05:20+08:00)
-2017-06-01 13:06:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:10:20 CST)" executed successfully
-2017-06-01 13:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:10:20 CST)" (scheduled at 2017-06-01 13:10:20+08:00)
-2017-06-01 13:11:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:15:20 CST)" executed successfully
-2017-06-01 13:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:15:20 CST)" (scheduled at 2017-06-01 13:15:20+08:00)
-2017-06-01 13:16:17 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:20:20 CST)" executed successfully
-2017-06-01 13:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:20:20 CST)" (scheduled at 2017-06-01 13:20:20+08:00)
-2017-06-01 13:21:17 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:25:20 CST)" executed successfully
-2017-06-01 13:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:25:20 CST)" (scheduled at 2017-06-01 13:25:20+08:00)
-2017-06-01 13:26:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:30:20 CST)" executed successfully
-2017-06-01 13:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:30:20 CST)" (scheduled at 2017-06-01 13:30:20+08:00)
-2017-06-01 13:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-06-01 14:00:20 CST)" (scheduled at 2017-06-01 13:30:20+08:00)
-2017-06-01 13:31:24 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:35:20 CST)" executed successfully
-2017-06-01 13:32:33 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-06-01 14:00:20 CST)" executed successfully
-2017-06-01 13:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:35:20 CST)" (scheduled at 2017-06-01 13:35:20+08:00)
-2017-06-01 13:36:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:40:20 CST)" executed successfully
-2017-06-01 13:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:40:20 CST)" (scheduled at 2017-06-01 13:40:20+08:00)
-2017-06-01 13:41:19 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:45:20 CST)" executed successfully
-2017-06-01 13:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:50:20 CST)" (scheduled at 2017-06-01 13:45:20+08:00)
-2017-06-01 13:46:17 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:50:20 CST)" executed successfully
-2017-06-01 13:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:55:20 CST)" (scheduled at 2017-06-01 13:50:20+08:00)
-2017-06-01 13:51:16 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 13:55:20 CST)" executed successfully
-2017-06-01 13:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:00:20 CST)" (scheduled at 2017-06-01 13:55:20+08:00)
-2017-06-01 13:56:17 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:00:20 CST)" executed successfully
-2017-06-01 14:00:20 base.py[line:619] INFO Removed job 260
-2017-06-01 14:00:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:05:20 CST)" (scheduled at 2017-06-01 14:00:20+08:00)
-2017-06-01 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-06-01 14:00:20 CST)" (scheduled at 2017-06-01 14:00:20+08:00)
-2017-06-01 14:00:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-06-01 14:30:20 CST)" (scheduled at 2017-06-01 14:00:20+08:00)
-2017-06-01 14:01:27 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:05:20 CST)" executed successfully
-2017-06-01 14:04:22 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-06-01 14:30:20 CST)" executed successfully
-2017-06-01 14:04:22 base.py[line:135] INFO Job "WarningMessage (trigger: interval[1:00:00], next run at: 2017-06-01 14:00:20 CST)" executed successfully
-2017-06-01 14:05:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:10:20 CST)" (scheduled at 2017-06-01 14:05:20+08:00)
-2017-06-01 14:06:16 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:10:20 CST)" executed successfully
-2017-06-01 14:10:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:15:20 CST)" (scheduled at 2017-06-01 14:10:20+08:00)
-2017-06-01 14:11:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:15:20 CST)" executed successfully
-2017-06-01 14:15:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:20:20 CST)" (scheduled at 2017-06-01 14:15:20+08:00)
-2017-06-01 14:16:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:20:20 CST)" executed successfully
-2017-06-01 14:20:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:25:20 CST)" (scheduled at 2017-06-01 14:20:20+08:00)
-2017-06-01 14:21:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:25:20 CST)" executed successfully
-2017-06-01 14:25:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:30:20 CST)" (scheduled at 2017-06-01 14:25:20+08:00)
-2017-06-01 14:26:33 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:30:20 CST)" executed successfully
-2017-06-01 14:30:20 base.py[line:619] INFO Removed job 230
-2017-06-01 14:30:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:35:20 CST)" (scheduled at 2017-06-01 14:30:20+08:00)
-2017-06-01 14:30:20 base.py[line:123] INFO Running job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-06-01 14:30:20 CST)" (scheduled at 2017-06-01 14:30:20+08:00)
-2017-06-01 14:31:23 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:35:20 CST)" executed successfully
-2017-06-01 14:32:32 base.py[line:135] INFO Job "WarningMessage (trigger: interval[0:30:00], next run at: 2017-06-01 14:30:20 CST)" executed successfully
-2017-06-01 14:35:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:40:20 CST)" (scheduled at 2017-06-01 14:35:20+08:00)
-2017-06-01 14:36:16 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:40:20 CST)" executed successfully
-2017-06-01 14:40:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:45:20 CST)" (scheduled at 2017-06-01 14:40:20+08:00)
-2017-06-01 14:41:21 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:45:20 CST)" executed successfully
-2017-06-01 14:45:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:50:20 CST)" (scheduled at 2017-06-01 14:45:20+08:00)
-2017-06-01 14:46:16 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:50:20 CST)" executed successfully
-2017-06-01 14:50:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:55:20 CST)" (scheduled at 2017-06-01 14:50:20+08:00)
-2017-06-01 14:51:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:55:20 CST)" executed successfully
-2017-06-01 14:55:20 base.py[line:619] INFO Removed job 205
-2017-06-01 14:55:20 base.py[line:123] INFO Running job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:55:20 CST)" (scheduled at 2017-06-01 14:55:20+08:00)
-2017-06-01 14:56:18 base.py[line:135] INFO Job "WarningMessage2 (trigger: interval[0:05:00], next run at: 2017-06-01 14:55:20 CST)" executed successfully
-2017-06-01 15:05:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-06-02 15:05:00 CST)" (scheduled at 2017-06-01 15:05:00+08:00)
-2017-06-01 15:11:56 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='5'], next run at: 2017-06-02 15:05:00 CST)" executed successfully
-2017-06-01 17:36:36 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=10&windcode=300041.sz&type=5 (::1) 4.00ms
-2017-06-01 21:30:00 base.py[line:123] INFO Running job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-06-02 21:30:00 CST)" (scheduled at 2017-06-01 21:30:00+08:00)
-2017-06-01 21:30:00 base.py[line:135] INFO Job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-06-02 21:30:00 CST)" executed successfully
-2017-06-01 22:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-02 05:00:00 CST)" (scheduled at 2017-06-01 22:00:00+08:00)
-2017-06-01 22:08:46 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-02 05:00:00 CST)" executed successfully
+2017-06-12 09:50:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:50:20 CST)" (scheduled at 2017-06-12 09:50:20+08:00)
+2017-06-12 09:52:15 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:55:20 CST)" executed successfully
+2017-06-12 09:55:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 09:55:20 CST)" (scheduled at 2017-06-12 09:55:20+08:00)
+2017-06-12 09:57:15 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:00:20 CST)" executed successfully
+2017-06-12 10:00:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:00:20 CST)" (scheduled at 2017-06-12 10:00:20+08:00)
+2017-06-12 10:03:21 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:05:20 CST)" executed successfully
+2017-06-12 10:05:09 base.py[line:135] INFO Job "OHLC_Update (trigger: cron[day_of_week='0-6', hour='9', minute='31'], next run at: 2017-06-13 09:31:00 CST)" executed successfully
+2017-06-12 10:05:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:10:20 CST)" (scheduled at 2017-06-12 10:05:20+08:00)
+2017-06-12 10:06:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:10:20 CST)" executed successfully
+2017-06-12 10:10:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:15:20 CST)" (scheduled at 2017-06-12 10:10:20+08:00)
+2017-06-12 10:11:41 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:15:20 CST)" executed successfully
+2017-06-12 10:15:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:20:20 CST)" (scheduled at 2017-06-12 10:15:20+08:00)
+2017-06-12 10:16:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:20:20 CST)" executed successfully
+2017-06-12 10:20:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:25:20 CST)" (scheduled at 2017-06-12 10:20:20+08:00)
+2017-06-12 10:21:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:25:20 CST)" executed successfully
+2017-06-12 10:25:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:30:20 CST)" (scheduled at 2017-06-12 10:25:20+08:00)
+2017-06-12 10:26:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:30:20 CST)" executed successfully
+2017-06-12 10:30:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:35:20 CST)" (scheduled at 2017-06-12 10:30:20+08:00)
+2017-06-12 10:34:37 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:35:20 CST)" executed successfully
+2017-06-12 10:35:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:40:20 CST)" (scheduled at 2017-06-12 10:35:20+08:00)
+2017-06-12 10:36:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:40:20 CST)" executed successfully
+2017-06-12 10:40:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:45:20 CST)" (scheduled at 2017-06-12 10:40:20+08:00)
+2017-06-12 10:41:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:45:20 CST)" executed successfully
+2017-06-12 10:45:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:50:20 CST)" (scheduled at 2017-06-12 10:45:20+08:00)
+2017-06-12 10:46:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:50:20 CST)" executed successfully
+2017-06-12 10:50:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:55:20 CST)" (scheduled at 2017-06-12 10:50:20+08:00)
+2017-06-12 10:51:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 10:55:20 CST)" executed successfully
+2017-06-12 10:55:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:00:20 CST)" (scheduled at 2017-06-12 10:55:20+08:00)
+2017-06-12 10:56:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:00:20 CST)" executed successfully
+2017-06-12 11:00:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:00:20 CST)" (scheduled at 2017-06-12 11:00:20+08:00)
+2017-06-12 11:03:25 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:05:20 CST)" executed successfully
+2017-06-12 11:05:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:10:20 CST)" (scheduled at 2017-06-12 11:05:20+08:00)
+2017-06-12 11:06:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:10:20 CST)" executed successfully
+2017-06-12 11:10:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:15:20 CST)" (scheduled at 2017-06-12 11:10:20+08:00)
+2017-06-12 11:11:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:15:20 CST)" executed successfully
+2017-06-12 11:15:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:20:20 CST)" (scheduled at 2017-06-12 11:15:20+08:00)
+2017-06-12 11:16:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:20:20 CST)" executed successfully
+2017-06-12 11:20:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:25:20 CST)" (scheduled at 2017-06-12 11:20:20+08:00)
+2017-06-12 11:21:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:25:20 CST)" executed successfully
+2017-06-12 11:25:20 base.py[line:619] INFO Removed job 105
+2017-06-12 11:25:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:25:20 CST)" (scheduled at 2017-06-12 11:25:20+08:00)
+2017-06-12 11:26:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 11:25:20 CST)" executed successfully
+2017-06-12 11:33:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='11', minute='33'], next run at: 2017-06-12 11:33:00 CST)" (scheduled at 2017-06-12 11:33:00+08:00)
+2017-06-12 11:37:59 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='11', minute='33'], next run at: 2017-06-13 11:33:00 CST)" executed successfully
+2017-06-12 13:01:30 base.py[line:123] INFO Running job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-06-12 13:01:30 CST)" (scheduled at 2017-06-12 13:01:30+08:00)
+2017-06-12 13:01:30 base.py[line:619] INFO Removed job 201
+2017-06-12 13:02:24 base.py[line:135] INFO Job "WMOneMinute (trigger: interval[0:01:00], next run at: 2017-06-12 13:01:30 CST)" executed successfully
+2017-06-12 13:05:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:05:20 CST)" (scheduled at 2017-06-12 13:05:20+08:00)
+2017-06-12 13:06:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:10:20 CST)" executed successfully
+2017-06-12 13:10:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:15:20 CST)" (scheduled at 2017-06-12 13:10:20+08:00)
+2017-06-12 13:11:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:15:20 CST)" executed successfully
+2017-06-12 13:15:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:20:20 CST)" (scheduled at 2017-06-12 13:15:20+08:00)
+2017-06-12 13:16:16 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:20:20 CST)" executed successfully
+2017-06-12 13:20:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:25:20 CST)" (scheduled at 2017-06-12 13:20:20+08:00)
+2017-06-12 13:21:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:25:20 CST)" executed successfully
+2017-06-12 13:25:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:30:20 CST)" (scheduled at 2017-06-12 13:25:20+08:00)
+2017-06-12 13:26:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:30:20 CST)" executed successfully
+2017-06-12 13:30:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:35:20 CST)" (scheduled at 2017-06-12 13:30:20+08:00)
+2017-06-12 13:33:13 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:35:20 CST)" executed successfully
+2017-06-12 13:35:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:40:20 CST)" (scheduled at 2017-06-12 13:35:20+08:00)
+2017-06-12 13:36:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:40:20 CST)" executed successfully
+2017-06-12 13:40:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:45:20 CST)" (scheduled at 2017-06-12 13:40:20+08:00)
+2017-06-12 13:41:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:45:20 CST)" executed successfully
+2017-06-12 13:45:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:50:20 CST)" (scheduled at 2017-06-12 13:45:20+08:00)
+2017-06-12 13:46:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:50:20 CST)" executed successfully
+2017-06-12 13:50:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:50:20 CST)" (scheduled at 2017-06-12 13:50:20+08:00)
+2017-06-12 13:51:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 13:55:20 CST)" executed successfully
+2017-06-12 13:55:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:00:20 CST)" (scheduled at 2017-06-12 13:55:20+08:00)
+2017-06-12 13:56:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:00:20 CST)" executed successfully
+2017-06-12 14:00:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:05:20 CST)" (scheduled at 2017-06-12 14:00:20+08:00)
+2017-06-12 14:05:18 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:05:20 CST)" executed successfully
+2017-06-12 14:05:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:10:20 CST)" (scheduled at 2017-06-12 14:05:20+08:00)
+2017-06-12 14:06:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:10:20 CST)" executed successfully
+2017-06-12 14:10:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:15:20 CST)" (scheduled at 2017-06-12 14:10:20+08:00)
+2017-06-12 14:11:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:15:20 CST)" executed successfully
+2017-06-12 14:15:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:20:20 CST)" (scheduled at 2017-06-12 14:15:20+08:00)
+2017-06-12 14:16:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:20:20 CST)" executed successfully
+2017-06-12 14:20:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:25:20 CST)" (scheduled at 2017-06-12 14:20:20+08:00)
+2017-06-12 14:21:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:25:20 CST)" executed successfully
+2017-06-12 14:25:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:30:20 CST)" (scheduled at 2017-06-12 14:25:20+08:00)
+2017-06-12 14:26:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:30:20 CST)" executed successfully
+2017-06-12 14:30:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:35:20 CST)" (scheduled at 2017-06-12 14:30:20+08:00)
+2017-06-12 14:33:51 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:35:20 CST)" executed successfully
+2017-06-12 14:35:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:40:20 CST)" (scheduled at 2017-06-12 14:35:20+08:00)
+2017-06-12 14:36:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:40:20 CST)" executed successfully
+2017-06-12 14:40:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:45:20 CST)" (scheduled at 2017-06-12 14:40:20+08:00)
+2017-06-12 14:41:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:45:20 CST)" executed successfully
+2017-06-12 14:45:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:50:20 CST)" (scheduled at 2017-06-12 14:45:20+08:00)
+2017-06-12 14:46:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:50:20 CST)" executed successfully
+2017-06-12 14:50:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:55:20 CST)" (scheduled at 2017-06-12 14:50:20+08:00)
+2017-06-12 14:51:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:55:20 CST)" executed successfully
+2017-06-12 14:55:20 base.py[line:619] INFO Removed job 205
+2017-06-12 14:55:20 base.py[line:123] INFO Running job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:55:20 CST)" (scheduled at 2017-06-12 14:55:20+08:00)
+2017-06-12 14:56:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:55:20 CST)" executed successfully
+2017-06-12 15:03:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='3'], next run at: 2017-06-13 15:03:00 CST)" (scheduled at 2017-06-12 15:03:00+08:00)
+2017-06-12 15:07:52 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='3'], next run at: 2017-06-13 15:03:00 CST)" executed successfully

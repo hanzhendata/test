@@ -11,6 +11,8 @@ db_config = {
 
 BreakVolumePermitDays = 10
 BreakCentralPermitDays = 10
+StocksStrongPermitDays = 10
+StocksReadyPermitDays  = 10
 
 SellingEnable = False
 

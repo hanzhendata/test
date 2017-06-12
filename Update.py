@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf8 -*-
 from LieFeng import Config,Slice,FourIndicator,Stock
 from WindPy import w
 from datetime import time,datetime
@@ -112,9 +114,9 @@ def UpdateData_All(Board_Dict,Windcode_Dict,Connect,WindPy):
 		Stock.StocksDaysHistoryUpdate(Board_Dict    ,ktype,Connect,WindPy)
 		Stock.StocksDaysHistoryUpdate(Windcode_Dict ,ktype,Connect,WindPy)
 		Stock.StocksDaysHistoryUpdate(zs_dict ,ktype,Connect,WindPy)		
-	if wd < 6:
-		Stock.StocksMinutesHistoryUpdate(Windcode_Dict ,0,Connect,WindPy)
-		Stock.StocksMinutesHistoryUpdate(zs_dict ,0,Connect,WindPy)
+	# if wd < 6:
+	Stock.StocksMinutesHistoryUpdate(Windcode_Dict ,0,Connect,WindPy)
+	Stock.StocksMinutesHistoryUpdate(zs_dict ,0,Connect,WindPy)
 	MarketType = 1
 
 	#slice and techincal analysis
@@ -178,7 +180,7 @@ def Update(Connect,WindPy):
 		if da['code'] in suspend0:
 			continue	
 		windcode_dict  [da['code'] ] = { 'name':da['name'],}
-	cnx.commit()
+	Connect.commit()
 	
 	Stock.StocksBasicUpdate(windcode_dict,Connect,WindPy)
 
@@ -239,6 +241,115 @@ def Update(Connect,WindPy):
 	Connect.commit()
 	cursor.close()
 
+def DataCheck(Connect,WindPy):
+	current_date = datetime.now()
+	
+	tdo = WindPy.tdaysoffset(0, current_date, "")
+	if Config.CheckWindData(tdo) :
+		current_date = tdo.Data[0][0]
+
+	datestr = current_date.strftime("%Y-%m-%d")
+	
+	boardcode_dict = {}	
+	windcode_dict  = {}
+
+	
+	MarketType = 1
+	  
+	suspend0 = Stock.GetSuspendStockSet(current_date,0,WindPy)
+	cursor = Connect.cursor()
+
+	sql = "select  name, windcode from stocks_board"	
+	
+	# cursor = Connect.cursor()
+	
+	cursor.execute(sql)
+	for bname,windcode in cursor:		
+		boardcode_dict [windcode] = {'name':bname,}
+		
+	
+	cursor.execute("select name,windcode,date from stocks_code")
+	num = 0
+	for bname,windcode,bdate in cursor:			
+		if windcode in suspend0:
+			continue
+		if bdate.date()	== datetime.now().date() :
+			num +=1
+		windcode_dict  [ windcode ] = { 'name': bname,}
+	if num != len(windcode_dict) :
+		message = str(num)+"/"+str(len(windcode_dict))
+		Config.SendErrorMessage(current_date,0,u'股票代码获取不全! '+message)
+	
+	
+	sql ="select windcode,date from stocks_history_days where windcode=%(code)s and ktype=%(ktype)s order by date desc limit 1"
+	for ktype in [7,8]:
+		num = 0 	
+		for windcode in boardcode_dict:	
+			cursor.execute(sql,{'code':windcode,'ktype':ktype})
+			if cursor.rowcount>0:
+				wdate = cursor.fetchone()[1]
+				if wdate.date() == current_date.date() :
+					num += 1
+			else:
+				num +=1
+		if num != len(boardcode_dict):
+			message ='ktype='+str(ktype)+' '+ str(num)+"/"+str(len(boardcode_dict))
+			Config.SendErrorMessage(current_date,0,u'Board '+message)
+		num = 0 	
+		for windcode in windcode_dict:	
+			cursor.execute(sql,{'code':windcode,'ktype':ktype})
+			if cursor.rowcount>0:
+				wdate = cursor.fetchone()[1]
+				if wdate.date() == current_date.date() :
+					num += 1
+			else:
+				num +=1
+		if num != len(windcode_dict):
+			message ='ktype='+str(ktype)+' '+ str(num)+"/"+str(len(windcode_dict))
+			Config.SendErrorMessage(current_date,0,u'wincode '+message)
+		
+	sql ="select windcode,date from stocks_history_minutes where windcode=%(code)s and ktype=%(ktype)s order by date desc limit 1"
+	for ktype in [0,2,4,5,6]:		
+		num = 0 	
+		for windcode in windcode_dict:	
+			cursor.execute(sql,{'code':windcode,'ktype':ktype})
+			if cursor.rowcount>0:
+				wdate = cursor.fetchone()[1]
+				# print wdate ,current_date
+				if wdate.date() == current_date.date() :
+					num += 1
+			else:
+				num +=1
+		if num != len(windcode_dict):
+			message ='ktype='+str(ktype)+' '+ str(num)+"/"+str(len(windcode_dict))
+			Config.SendErrorMessage(current_date,0,u'wincode '+message)
+		else:
+			print 'ktype ',ktype,num, len(windcode_dict)
+
+
+	sql ="select windcode,quarter from stocks_basic where btype=9 and windcode=%(code)s order by quarter desc limit 1"
+		
+	num = 0 	
+	for windcode in windcode_dict:	
+		cursor.execute(sql,{'code':windcode })
+		if cursor.rowcount>0:
+			wdate = cursor.fetchone()[1]
+			if wdate.date() == current_date.date() :
+				num += 1
+		else:
+			num +=1
+	if num != len(windcode_dict):
+		message ='stars '+ str(num)+"/"+str(len(windcode_dict))
+		Config.SendErrorMessage(current_date,0,u'wincode '+message)		
+	else:
+		print 'stars ',num ,len(windcode_dict)
+
+			
+	
+		
+	Connect.commit()
+	cursor.close()	
+
 # import cProfile
 if __name__ == '__main__':
 	cnx = mysql.connector.connect(**Config.config)
@@ -253,6 +364,7 @@ if __name__ == '__main__':
 	# prof = cProfile.Profile()
 	# prof.enable()
 	Update(cnx,w)
+	DataCheck(cnx,w)
 	# UpdateData_All([],[],cnx,w)
 	# prof.create_stats()
 	# prof.print_stats()

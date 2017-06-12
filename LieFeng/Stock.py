@@ -2199,7 +2199,7 @@ def StocksFundIndexCalc(Windcode_Dict,ktype,StocksList7,StocksList8,Default=True
 			if cd0 >= dateplus1[ dcp ] :
 				if stock8['diff'][dcp]>0 and stock8['pb1'][dcp]>stock8['pb6'][dcp] and stock8['pb2'][dcp]>stock8['pb6'][dcp] :
 					week_windcode.append(windcode)
-		rt[ri]['windcode'] = week_windcode[:]
+		rt[ri]['windcode'] = week_windcode
 		print rt[ri]
 	gc.collect()
 	return rt

@@ -1520,22 +1520,22 @@ def WarningMessage_Init(GdbbFlag=False):
                             'close':wsd.Data[3][0],
                             })
             Windcode_Dict[windcode]['tech'+ktypestr] = Stock.StocksTech(Windcode_Dict[windcode][ktypestr])
-    for index in range(len(Windcode_Stype)) : 
+    for stype in range(len(Windcode_Stype)) : 
         if  not GdbbFlag :        
             continue 
              
-        for windcode in  Windcode_Stype[index]  :            
+        for windcode in  Windcode_Stype[stype]  :            
             
-            if Windcode_Stype[index][windcode]['warning_status'] != 1 :
+            if Windcode_Stype[stype][windcode]['warning_status'] != 1 :
                 continue 
-            if index == 2:
+            if stype == 2:
                 ktype = 2 
-            elif index == 5 :
+            elif stype == 5 :
                 ktype = 5
             else:
                 continue            
             indicator =  Windcode_Dict[windcode][ktypestr]
-            wnd =  Windcode_Stype[index][windcode]['warning_date']
+            wnd =  Windcode_Stype[stype][windcode]['warning_date']
             
             if wnd.date() == current_time :
                 continue
@@ -1546,15 +1546,15 @@ def WarningMessage_Init(GdbbFlag=False):
             for index in range( len(indicator) ):
                 if  wnd == indicator[-index-1]['date'] :
                     break
-            print ktype,windcode,Windcode_Stype[index][windcode]['warning_date'],Windcode_Stype[index][windcode]['warning_status'],-index-1
+            print ktype,windcode,Windcode_Stype[stype][windcode]['warning_date'],Windcode_Stype[stype][windcode]['warning_status'],-index-1
             for i in range(-index-1,0):
                 # print -index-1,i,indicator[i]['date']
                 if Windcode_Dict[windcode]['tech'+ktypestr]['diff'][i] > Windcode_Dict[windcode]['tech'+ktypestr]['dea'][i] :
                     if Windcode_Dict[windcode]['tech'+ktypestr]['diff'][i-1] < Windcode_Dict[windcode]['tech'+ktypestr]['dea'][i-1] :
-                        if Windcode_Stype[index][windcode].get('gdbb') is None:
-                           Windcode_Stype[index][windcode].update( {'gdbb':[4]} )
+                        if Windcode_Stype[stype][windcode].get('gdbb') is None:
+                           Windcode_Stype[stype][windcode].update( {'gdbb':[4]} )
                         else:
-                           Windcode_Stype[index][windcode]['gdbb'].append(4)
+                           Windcode_Stype[stype][windcode]['gdbb'].append(4)
     #add unfinished week days OHLC. 
     ktype = 8 
     last_date = Stock.StocksGetLastDate(ktype,current_time.date())
@@ -2266,7 +2266,7 @@ def WarningMessage2(LastFlag=False):
                 'wdate':dtime,    
             })
         except Exception, e:
-            print "WarningMessage to Database error: " + e.message,windcode,ktype,stype
+            print "WarningMessage to Database error: " + e.message,windcode,ktype,index
             cursor.close()
             cursor = Connector.cursor()
             continue
@@ -3116,11 +3116,11 @@ clients = set()
 WindPy = w 
 TradeDayFlag = False
 
-ReleaseFlag = False
+ReleaseFlag = True
 # scheduler = BackgroundScheduler()
 scheduler = TornadoScheduler()
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S',  filename='develop.txt',  filemode='a')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S',  filename='release.txt',  filemode='a')
 
 
 if __package__ is None:
