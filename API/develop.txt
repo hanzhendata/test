@@ -144,3 +144,8 @@ InterfaceError: 2003: Can't connect to MySQL server on '10.15.6.108:3306' (10060
 2017-06-12 14:56:17 base.py[line:135] INFO Job "WarningMessage_Minute (trigger: interval[0:05:00], next run at: 2017-06-12 14:55:20 CST)" executed successfully
 2017-06-12 15:03:00 base.py[line:123] INFO Running job "WarningMessageAll (trigger: cron[hour='15', minute='3'], next run at: 2017-06-13 15:03:00 CST)" (scheduled at 2017-06-12 15:03:00+08:00)
 2017-06-12 15:07:52 base.py[line:135] INFO Job "WarningMessageAll (trigger: cron[hour='15', minute='3'], next run at: 2017-06-13 15:03:00 CST)" executed successfully
+2017-06-12 20:31:14 wsgi.py[line:355] INFO 200 GET /api/v1.0/stocksmarket/?num=10&windcode=002185.sz&type=6 (::1) 4.00ms
+2017-06-12 21:30:00 base.py[line:123] INFO Running job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-06-13 21:30:00 CST)" (scheduled at 2017-06-12 21:30:00+08:00)
+2017-06-12 21:30:00 base.py[line:135] INFO Job "WarningMessage_Week (trigger: cron[day_of_week='0-6', hour='21', minute='30'], next run at: 2017-06-13 21:30:00 CST)" executed successfully
+2017-06-12 22:00:00 base.py[line:123] INFO Running job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-13 05:00:00 CST)" (scheduled at 2017-06-12 22:00:00+08:00)
+2017-06-12 22:08:43 base.py[line:135] INFO Job "Init (trigger: cron[day_of_week='0-6', hour='5,22'], next run at: 2017-06-13 05:00:00 CST)" executed successfully
